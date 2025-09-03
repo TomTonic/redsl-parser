@@ -3,3 +3,4 @@ src/generated/*.*
 
 # Log file
 *.log
+.DS_Store
