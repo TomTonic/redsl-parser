@@ -1,0 +1,8 @@
+file "filename" {
+    document "docName" {
+        package "packageName" {
+            file "file1"
+            file "file2"
+        }
+    }
+}

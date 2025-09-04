@@ -1,0 +1,5 @@
+file "filename" {
+    document "docName" {
+        glossary
+    }
+}
