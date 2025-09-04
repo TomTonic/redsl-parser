@@ -1,0 +1,9 @@
+Rule: parse
+  Rule: fileDecl
+    Terminal: file
+    Terminal: "filename"
+    Terminal: {
+    Rule: packageDecl
+      Terminal: package
+      Terminal: "validPackageName"
+    Terminal: }
