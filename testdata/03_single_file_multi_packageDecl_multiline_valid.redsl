@@ -1,0 +1,17 @@
+file "filename" {
+
+
+
+    package "validPackageName1"
+
+
+
+
+    package "validPackageName2"
+
+
+
+
+
+
+}
