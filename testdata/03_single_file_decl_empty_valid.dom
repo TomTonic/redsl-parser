@@ -1,0 +1,6 @@
+Rule: parse
+  Rule: fileDecl
+    Terminal: file
+    Terminal: "filename"
+    Terminal: {
+    Terminal: }
