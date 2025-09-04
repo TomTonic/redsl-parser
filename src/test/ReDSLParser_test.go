@@ -1,7 +1,6 @@
 package test
 
 import (
-	"fmt"
 	"os"
 	redsl_parser "redsl_parser/generated"
 	"testing"
@@ -10,7 +9,7 @@ import (
 )
 
 type SyntaxErrorListener struct {
-	antlr.DefaultErrorListener
+	*antlr.DefaultErrorListener
 	ErrorCount int
 }
 
@@ -19,33 +18,87 @@ func (l *SyntaxErrorListener) SyntaxError(recognizer antlr.Recognizer, offending
 	l.ErrorCount++
 }
 
-func TestValidReDSLDocument(t *testing.T) {
-	input, err := os.ReadFile("./data/02_single_packageDecl_valid.redsl")
+func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
+	files, err := os.ReadDir("./data")
 	if err != nil {
 		t.Fatal(err)
 	}
-	inputStream := antlr.NewInputStream(string(input))
-	lexer := redsl_parser.NewReDSLLexer(inputStream)
-	stream := antlr.NewCommonTokenStream(lexer, antlr.TokenDefaultChannel)
-	parser := redsl_parser.NewReDSLParser(stream)
 
-	listener := &SyntaxErrorListener{}
-	//parser.RemoveErrorListeners() // optional: remove default console error listener
-	parser.AddErrorListener(listener)
+	for _, file := range files {
+		name := file.Name()
+		if !file.IsDir() && len(name) > 6 && name[len(name)-6:] == ".redsl" {
+			t.Run(name, func(t *testing.T) {
+				input, err := os.ReadFile("./data/" + name)
+				if err != nil {
+					t.Fatalf("failed to read file: %v", err)
+				}
+				inputStream := antlr.NewInputStream(string(input))
+				lexer := redsl_parser.NewReDSLLexer(inputStream)
+				stream := antlr.NewCommonTokenStream(lexer, antlr.TokenDefaultChannel)
+				parser := redsl_parser.NewReDSLParser(stream)
 
-	// Try to parse the document
-	tree := parser.Parse()
-	if tree == nil {
-		t.Errorf("parse tree is nil")
+				listener := &SyntaxErrorListener{}
+				lexer.RemoveErrorListeners()
+				lexer.AddErrorListener(listener)
+				parser.RemoveErrorListeners()
+				parser.AddErrorListener(listener)
+				parser.SetErrorHandler(antlr.NewDefaultErrorStrategy())
+
+				tree := parser.Parse()
+				if tree == nil {
+					t.Errorf("parse tree is nil for %s", name)
+					t.Fail()
+					return
+				}
+
+				if !shouldBeValid(name) {
+					if listener.ErrorCount == 0 {
+						t.Errorf("expected syntax errors for %s, got none. The DOM is:", name)
+						// t.Fail()
+						//return
+						dom := buildDOM(tree, 0)
+						if dom == nil {
+							t.Errorf("DOM is nil for %s", name)
+							t.Fail()
+							return
+						}
+						domStr := dom.PrintTree()
+						t.Error(domStr)
+					}
+				} else {
+					if listener.ErrorCount != 0 {
+						t.Errorf("expected no syntax errors for %s, got %d", name, listener.ErrorCount)
+						t.Fail()
+						return
+					}
+					dom := buildDOM(tree, 0)
+					if dom == nil {
+						t.Errorf("DOM is nil for %s", name)
+						t.Fail()
+						return
+					}
+					domStr := dom.PrintTree()
+					domFile := "./data/" + name[:len(name)-6] + ".dom"
+					expectedDOM, err := os.ReadFile(domFile)
+					if err != nil {
+						t.Errorf("failed to read DOM file: %v, should be:", err)
+						t.Error(domStr)
+						t.Fail()
+						return
+					}
+					if domStr != string(expectedDOM) {
+						t.Errorf("DOM string does not match expected for %s:\n%s\n", name, domStr)
+						t.Fail()
+						return
+					}
+				}
+			})
+		}
 	}
-	if listener.ErrorCount != 0 {
-		t.Errorf("expected valid ReDSL document, got %d syntax errors", listener.ErrorCount)
-	}
-	dom := buildDOM(tree, 0)
-	if dom == nil {
-		t.Errorf("DOM is nil")
-	}
-	s := dom.PrintTree()
-	fmt.Println(s)
-	//t.Log(s)
+}
+
+func shouldBeValid(filename string) bool {
+	expected_suffix := "_valid.redsl"
+	actual_suffix := filename[len(filename)-len(expected_suffix):]
+	return actual_suffix == expected_suffix
 }

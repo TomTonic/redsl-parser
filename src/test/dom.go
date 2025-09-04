@@ -17,7 +17,7 @@ type DOMNode struct {
 
 func (n *DOMNode) String() string {
 	indent := strings.Repeat("  ", n.lvl)
-	return fmt.Sprintf("%sType: %s, Text: %s", indent, n.Type, n.Text)
+	return fmt.Sprintf("%s%s: %s", indent, n.Type, n.Text)
 }
 
 func (n *DOMNode) PrintTree() string {
@@ -25,9 +25,9 @@ func (n *DOMNode) PrintTree() string {
 	if len(n.Children) == 0 {
 		return myself
 	}
-	subtree := myself + "\n"
+	subtree := myself
 	for _, child := range n.Children {
-		subtree += child.PrintTree() + "\n"
+		subtree += "\n" + child.PrintTree()
 	}
 	return subtree
 }
@@ -36,9 +36,9 @@ var ruleNames = redsl_parser.NewReDSLParser(nil).GetRuleNames()
 
 func buildDOM(node antlr.Tree, level int) *DOMNode {
 	// Rekursiv durchreichen bei Kettenproduktion
-	if node.GetChildCount() == 1 {
-		return buildDOM(node.GetChild(0), level)
-	}
+	//if node.GetChildCount() == 1 {
+	//	return buildDOM(node.GetChild(0), level)
+	//}
 
 	var text string
 	var nodeType string
