@@ -1,0 +1,22 @@
+Rule: parse
+  Rule: fileDecl
+    Terminal: file
+    Terminal: "filename"
+    Terminal: {
+    Rule: documentDecl
+      Terminal: document
+      Terminal: "docName"
+      Terminal: {
+      Rule: packageRef
+        Terminal: package
+        Terminal: "packageName"
+        Terminal: {
+        Rule: fileRef
+          Terminal: file
+          Terminal: "file1"
+        Rule: fileRef
+          Terminal: file
+          Terminal: "file2"
+        Terminal: }
+      Terminal: }
+    Terminal: }
