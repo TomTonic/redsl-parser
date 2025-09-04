@@ -31,4 +31,4 @@ jobs:
 
       - name: Run tests and generate coverage report
         working-directory: ./src
-        run: go test ./test/...
+        run: go test ./test/... -v --cover
