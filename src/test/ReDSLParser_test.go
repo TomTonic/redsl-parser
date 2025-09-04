@@ -53,17 +53,14 @@ func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
 
 				if !shouldBeValid(name) {
 					if listener.ErrorCount == 0 {
-						t.Errorf("expected syntax errors for %s, got none. The DOM is:", name)
-						// t.Fail()
-						//return
 						dom := buildDOM(tree, 0)
 						if dom == nil {
-							t.Errorf("DOM is nil for %s", name)
+							t.Errorf("expected syntax errors for %s, got none. DOM is nil.", name)
 							t.Fail()
 							return
 						}
 						domStr := dom.PrintTree()
-						t.Error(domStr)
+						t.Errorf("expected syntax errors for %s, got none. The DOM is:\n%s", name, domStr)
 					}
 				} else {
 					if listener.ErrorCount != 0 {
@@ -81,13 +78,12 @@ func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
 					domFile := "../../testdata/" + name[:len(name)-6] + ".dom"
 					expectedDOM, err := os.ReadFile(domFile)
 					if err != nil {
-						t.Errorf("failed to read DOM file: %v, should be:", err)
-						t.Error(domStr)
+						t.Errorf("failed to read DOM file: %v, should be:\n%s", err, domStr)
 						t.Fail()
 						return
 					}
 					if domStr != string(expectedDOM) {
-						t.Errorf("DOM string does not match expected for %s:\n%s\n", name, domStr)
+						t.Errorf("DOM string does not match expected for %s:\n%s", name, domStr)
 						t.Fail()
 						return
 					}
