@@ -1,0 +1,7 @@
+Rule: parse
+  Rule: packageDecl
+    Terminal: package
+    Terminal: "validPackageName1"
+  Rule: packageDecl
+    Terminal: package
+    Terminal: "validPackageName2"
