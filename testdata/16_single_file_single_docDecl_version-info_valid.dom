@@ -10,3 +10,4 @@ Rule: parse
       Terminal: version-info
       Terminal: }
     Terminal: }
+  Terminal: <EOF>

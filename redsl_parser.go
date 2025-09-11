@@ -61,111 +61,113 @@ func redslparserParserInit() {
 	}
 	staticData.PredictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
-		4, 1, 54, 237, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
+		4, 1, 54, 241, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
 		4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 2, 8, 7, 8, 2, 9, 7, 9, 2, 10, 7,
 		10, 2, 11, 7, 11, 2, 12, 7, 12, 2, 13, 7, 13, 2, 14, 7, 14, 2, 15, 7, 15,
 		2, 16, 7, 16, 2, 17, 7, 17, 2, 18, 7, 18, 2, 19, 7, 19, 2, 20, 7, 20, 2,
 		21, 7, 21, 2, 22, 7, 22, 2, 23, 7, 23, 1, 0, 4, 0, 50, 8, 0, 11, 0, 12,
 		0, 51, 1, 0, 1, 0, 4, 0, 56, 8, 0, 11, 0, 12, 0, 57, 3, 0, 60, 8, 0, 1,
-		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1, 69, 8, 1, 10, 1, 12, 1, 72,
-		9, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 3, 1, 3, 3, 3, 81, 8, 3, 1, 3, 1,
-		3, 3, 3, 85, 8, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 1, 3, 5, 3, 93, 8, 3,
-		10, 3, 12, 3, 96, 9, 3, 3, 3, 98, 8, 3, 1, 3, 3, 3, 101, 8, 3, 1, 3, 1,
-		3, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 5, 1, 5, 1, 5, 3, 5, 113, 8, 5, 1,
-		6, 1, 6, 1, 7, 1, 7, 1, 7, 1, 7, 1, 7, 1, 7, 3, 7, 123, 8, 7, 1, 8, 1,
-		8, 1, 8, 1, 8, 1, 9, 1, 9, 1, 9, 1, 10, 1, 10, 1, 10, 1, 11, 1, 11, 1,
-		11, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 4, 12,
-		147, 8, 12, 11, 12, 12, 12, 148, 1, 13, 1, 13, 5, 13, 153, 8, 13, 10, 13,
-		12, 13, 156, 9, 13, 1, 13, 1, 13, 1, 14, 1, 14, 1, 14, 1, 14, 1, 14, 3,
-		14, 165, 8, 14, 1, 15, 1, 15, 1, 15, 1, 15, 1, 16, 1, 16, 1, 16, 1, 16,
-		1, 17, 1, 17, 1, 17, 1, 17, 1, 18, 1, 18, 1, 18, 3, 18, 182, 8, 18, 1,
-		19, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 5, 19, 190, 8, 19, 10, 19, 12, 19,
-		193, 9, 19, 1, 19, 1, 19, 1, 20, 1, 20, 5, 20, 199, 8, 20, 10, 20, 12,
-		20, 202, 9, 20, 1, 20, 1, 20, 1, 21, 1, 21, 1, 21, 1, 21, 1, 21, 1, 21,
-		1, 21, 3, 21, 213, 8, 21, 5, 21, 215, 8, 21, 10, 21, 12, 21, 218, 9, 21,
-		1, 21, 1, 21, 1, 22, 1, 22, 1, 22, 1, 22, 5, 22, 226, 8, 22, 10, 22, 12,
-		22, 229, 9, 22, 1, 22, 3, 22, 232, 8, 22, 1, 23, 1, 23, 1, 23, 1, 23, 0,
-		0, 24, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34,
-		36, 38, 40, 42, 44, 46, 0, 4, 2, 0, 43, 43, 47, 48, 1, 0, 44, 45, 1, 0,
-		53, 54, 1, 0, 11, 12, 255, 0, 59, 1, 0, 0, 0, 2, 61, 1, 0, 0, 0, 4, 75,
-		1, 0, 0, 0, 6, 78, 1, 0, 0, 0, 8, 104, 1, 0, 0, 0, 10, 112, 1, 0, 0, 0,
-		12, 114, 1, 0, 0, 0, 14, 122, 1, 0, 0, 0, 16, 124, 1, 0, 0, 0, 18, 128,
-		1, 0, 0, 0, 20, 131, 1, 0, 0, 0, 22, 134, 1, 0, 0, 0, 24, 146, 1, 0, 0,
-		0, 26, 150, 1, 0, 0, 0, 28, 164, 1, 0, 0, 0, 30, 166, 1, 0, 0, 0, 32, 170,
-		1, 0, 0, 0, 34, 174, 1, 0, 0, 0, 36, 178, 1, 0, 0, 0, 38, 183, 1, 0, 0,
-		0, 40, 196, 1, 0, 0, 0, 42, 205, 1, 0, 0, 0, 44, 221, 1, 0, 0, 0, 46, 233,
-		1, 0, 0, 0, 48, 50, 3, 2, 1, 0, 49, 48, 1, 0, 0, 0, 50, 51, 1, 0, 0, 0,
-		51, 49, 1, 0, 0, 0, 51, 52, 1, 0, 0, 0, 52, 60, 1, 0, 0, 0, 53, 56, 3,
-		4, 2, 0, 54, 56, 3, 6, 3, 0, 55, 53, 1, 0, 0, 0, 55, 54, 1, 0, 0, 0, 56,
-		57, 1, 0, 0, 0, 57, 55, 1, 0, 0, 0, 57, 58, 1, 0, 0, 0, 58, 60, 1, 0, 0,
-		0, 59, 49, 1, 0, 0, 0, 59, 55, 1, 0, 0, 0, 59, 60, 1, 0, 0, 0, 60, 1, 1,
-		0, 0, 0, 61, 62, 5, 1, 0, 0, 62, 63, 5, 5, 0, 0, 63, 70, 5, 2, 0, 0, 64,
-		69, 3, 4, 2, 0, 65, 69, 3, 6, 3, 0, 66, 69, 3, 8, 4, 0, 67, 69, 3, 42,
-		21, 0, 68, 64, 1, 0, 0, 0, 68, 65, 1, 0, 0, 0, 68, 66, 1, 0, 0, 0, 68,
-		67, 1, 0, 0, 0, 69, 72, 1, 0, 0, 0, 70, 68, 1, 0, 0, 0, 70, 71, 1, 0, 0,
-		0, 71, 73, 1, 0, 0, 0, 72, 70, 1, 0, 0, 0, 73, 74, 5, 3, 0, 0, 74, 3, 1,
-		0, 0, 0, 75, 76, 5, 4, 0, 0, 76, 77, 5, 5, 0, 0, 77, 5, 1, 0, 0, 0, 78,
-		80, 5, 7, 0, 0, 79, 81, 3, 26, 13, 0, 80, 79, 1, 0, 0, 0, 80, 81, 1, 0,
-		0, 0, 81, 82, 1, 0, 0, 0, 82, 84, 5, 14, 0, 0, 83, 85, 5, 21, 0, 0, 84,
-		83, 1, 0, 0, 0, 84, 85, 1, 0, 0, 0, 85, 97, 1, 0, 0, 0, 86, 94, 3, 24,
-		12, 0, 87, 93, 3, 18, 9, 0, 88, 93, 3, 20, 10, 0, 89, 93, 3, 22, 11, 0,
-		90, 91, 5, 21, 0, 0, 91, 93, 3, 24, 12, 0, 92, 87, 1, 0, 0, 0, 92, 88,
-		1, 0, 0, 0, 92, 89, 1, 0, 0, 0, 92, 90, 1, 0, 0, 0, 93, 96, 1, 0, 0, 0,
-		94, 92, 1, 0, 0, 0, 94, 95, 1, 0, 0, 0, 95, 98, 1, 0, 0, 0, 96, 94, 1,
-		0, 0, 0, 97, 86, 1, 0, 0, 0, 97, 98, 1, 0, 0, 0, 98, 100, 1, 0, 0, 0, 99,
-		101, 5, 21, 0, 0, 100, 99, 1, 0, 0, 0, 100, 101, 1, 0, 0, 0, 101, 102,
-		1, 0, 0, 0, 102, 103, 5, 17, 0, 0, 103, 7, 1, 0, 0, 0, 104, 105, 5, 7,
-		0, 0, 105, 106, 5, 15, 0, 0, 106, 107, 3, 10, 5, 0, 107, 108, 5, 41, 0,
-		0, 108, 9, 1, 0, 0, 0, 109, 113, 3, 12, 6, 0, 110, 113, 3, 14, 7, 0, 111,
-		113, 3, 16, 8, 0, 112, 109, 1, 0, 0, 0, 112, 110, 1, 0, 0, 0, 112, 111,
-		1, 0, 0, 0, 113, 11, 1, 0, 0, 0, 114, 115, 7, 0, 0, 0, 115, 13, 1, 0, 0,
-		0, 116, 117, 5, 46, 0, 0, 117, 123, 3, 10, 5, 0, 118, 119, 5, 49, 0, 0,
-		119, 120, 3, 10, 5, 0, 120, 121, 5, 50, 0, 0, 121, 123, 1, 0, 0, 0, 122,
-		116, 1, 0, 0, 0, 122, 118, 1, 0, 0, 0, 123, 15, 1, 0, 0, 0, 124, 125, 5,
-		43, 0, 0, 125, 126, 7, 1, 0, 0, 126, 127, 3, 10, 5, 0, 127, 17, 1, 0, 0,
-		0, 128, 129, 5, 22, 0, 0, 129, 130, 3, 24, 12, 0, 130, 19, 1, 0, 0, 0,
-		131, 132, 5, 23, 0, 0, 132, 133, 3, 24, 12, 0, 133, 21, 1, 0, 0, 0, 134,
-		135, 5, 24, 0, 0, 135, 136, 3, 24, 12, 0, 136, 23, 1, 0, 0, 0, 137, 147,
-		5, 30, 0, 0, 138, 147, 5, 29, 0, 0, 139, 147, 5, 25, 0, 0, 140, 147, 5,
-		27, 0, 0, 141, 147, 5, 18, 0, 0, 142, 147, 5, 26, 0, 0, 143, 147, 5, 19,
-		0, 0, 144, 147, 5, 20, 0, 0, 145, 147, 3, 40, 20, 0, 146, 137, 1, 0, 0,
-		0, 146, 138, 1, 0, 0, 0, 146, 139, 1, 0, 0, 0, 146, 140, 1, 0, 0, 0, 146,
-		141, 1, 0, 0, 0, 146, 142, 1, 0, 0, 0, 146, 143, 1, 0, 0, 0, 146, 144,
-		1, 0, 0, 0, 146, 145, 1, 0, 0, 0, 147, 148, 1, 0, 0, 0, 148, 146, 1, 0,
-		0, 0, 148, 149, 1, 0, 0, 0, 149, 25, 1, 0, 0, 0, 150, 154, 5, 13, 0, 0,
-		151, 153, 3, 28, 14, 0, 152, 151, 1, 0, 0, 0, 153, 156, 1, 0, 0, 0, 154,
-		152, 1, 0, 0, 0, 154, 155, 1, 0, 0, 0, 155, 157, 1, 0, 0, 0, 156, 154,
-		1, 0, 0, 0, 157, 158, 5, 31, 0, 0, 158, 27, 1, 0, 0, 0, 159, 165, 3, 30,
-		15, 0, 160, 165, 3, 32, 16, 0, 161, 165, 3, 34, 17, 0, 162, 165, 3, 36,
-		18, 0, 163, 165, 3, 38, 19, 0, 164, 159, 1, 0, 0, 0, 164, 160, 1, 0, 0,
-		0, 164, 161, 1, 0, 0, 0, 164, 162, 1, 0, 0, 0, 164, 163, 1, 0, 0, 0, 165,
-		29, 1, 0, 0, 0, 166, 167, 5, 32, 0, 0, 167, 168, 5, 33, 0, 0, 168, 169,
-		5, 34, 0, 0, 169, 31, 1, 0, 0, 0, 170, 171, 5, 32, 0, 0, 171, 172, 5, 33,
-		0, 0, 172, 173, 5, 32, 0, 0, 173, 33, 1, 0, 0, 0, 174, 175, 5, 32, 0, 0,
-		175, 176, 5, 33, 0, 0, 176, 177, 5, 39, 0, 0, 177, 35, 1, 0, 0, 0, 178,
-		181, 5, 32, 0, 0, 179, 180, 5, 33, 0, 0, 180, 182, 5, 38, 0, 0, 181, 179,
-		1, 0, 0, 0, 181, 182, 1, 0, 0, 0, 182, 37, 1, 0, 0, 0, 183, 184, 5, 32,
-		0, 0, 184, 185, 5, 33, 0, 0, 185, 186, 5, 35, 0, 0, 186, 191, 5, 32, 0,
-		0, 187, 188, 5, 36, 0, 0, 188, 190, 5, 32, 0, 0, 189, 187, 1, 0, 0, 0,
-		190, 193, 1, 0, 0, 0, 191, 189, 1, 0, 0, 0, 191, 192, 1, 0, 0, 0, 192,
-		194, 1, 0, 0, 0, 193, 191, 1, 0, 0, 0, 194, 195, 5, 37, 0, 0, 195, 39,
-		1, 0, 0, 0, 196, 200, 5, 28, 0, 0, 197, 199, 7, 2, 0, 0, 198, 197, 1, 0,
-		0, 0, 199, 202, 1, 0, 0, 0, 200, 198, 1, 0, 0, 0, 200, 201, 1, 0, 0, 0,
-		201, 203, 1, 0, 0, 0, 202, 200, 1, 0, 0, 0, 203, 204, 5, 52, 0, 0, 204,
-		41, 1, 0, 0, 0, 205, 206, 5, 8, 0, 0, 206, 207, 5, 5, 0, 0, 207, 216, 5,
-		2, 0, 0, 208, 215, 3, 44, 22, 0, 209, 215, 5, 9, 0, 0, 210, 212, 5, 10,
-		0, 0, 211, 213, 7, 3, 0, 0, 212, 211, 1, 0, 0, 0, 212, 213, 1, 0, 0, 0,
-		213, 215, 1, 0, 0, 0, 214, 208, 1, 0, 0, 0, 214, 209, 1, 0, 0, 0, 214,
-		210, 1, 0, 0, 0, 215, 218, 1, 0, 0, 0, 216, 214, 1, 0, 0, 0, 216, 217,
-		1, 0, 0, 0, 217, 219, 1, 0, 0, 0, 218, 216, 1, 0, 0, 0, 219, 220, 5, 3,
-		0, 0, 220, 43, 1, 0, 0, 0, 221, 222, 5, 4, 0, 0, 222, 231, 5, 5, 0, 0,
-		223, 227, 5, 2, 0, 0, 224, 226, 3, 46, 23, 0, 225, 224, 1, 0, 0, 0, 226,
-		229, 1, 0, 0, 0, 227, 225, 1, 0, 0, 0, 227, 228, 1, 0, 0, 0, 228, 230,
-		1, 0, 0, 0, 229, 227, 1, 0, 0, 0, 230, 232, 5, 3, 0, 0, 231, 223, 1, 0,
-		0, 0, 231, 232, 1, 0, 0, 0, 232, 45, 1, 0, 0, 0, 233, 234, 5, 1, 0, 0,
-		234, 235, 5, 5, 0, 0, 235, 47, 1, 0, 0, 0, 26, 51, 55, 57, 59, 68, 70,
-		80, 84, 92, 94, 97, 100, 112, 122, 146, 148, 154, 164, 181, 191, 200, 212,
-		214, 216, 227, 231,
+		0, 1, 0, 3, 0, 64, 8, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 1,
+		73, 8, 1, 10, 1, 12, 1, 76, 9, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 3, 1,
+		3, 3, 3, 85, 8, 3, 1, 3, 1, 3, 3, 3, 89, 8, 3, 1, 3, 1, 3, 1, 3, 1, 3,
+		1, 3, 1, 3, 5, 3, 97, 8, 3, 10, 3, 12, 3, 100, 9, 3, 3, 3, 102, 8, 3, 1,
+		3, 3, 3, 105, 8, 3, 1, 3, 1, 3, 1, 4, 1, 4, 1, 4, 1, 4, 1, 4, 1, 5, 1,
+		5, 1, 5, 3, 5, 117, 8, 5, 1, 6, 1, 6, 1, 7, 1, 7, 1, 7, 1, 7, 1, 7, 1,
+		7, 3, 7, 127, 8, 7, 1, 8, 1, 8, 1, 8, 1, 8, 1, 9, 1, 9, 1, 9, 1, 10, 1,
+		10, 1, 10, 1, 11, 1, 11, 1, 11, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12, 1, 12,
+		1, 12, 1, 12, 1, 12, 4, 12, 151, 8, 12, 11, 12, 12, 12, 152, 1, 13, 1,
+		13, 5, 13, 157, 8, 13, 10, 13, 12, 13, 160, 9, 13, 1, 13, 1, 13, 1, 14,
+		1, 14, 1, 14, 1, 14, 1, 14, 3, 14, 169, 8, 14, 1, 15, 1, 15, 1, 15, 1,
+		15, 1, 16, 1, 16, 1, 16, 1, 16, 1, 17, 1, 17, 1, 17, 1, 17, 1, 18, 1, 18,
+		1, 18, 3, 18, 186, 8, 18, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 5,
+		19, 194, 8, 19, 10, 19, 12, 19, 197, 9, 19, 1, 19, 1, 19, 1, 20, 1, 20,
+		5, 20, 203, 8, 20, 10, 20, 12, 20, 206, 9, 20, 1, 20, 1, 20, 1, 21, 1,
+		21, 1, 21, 1, 21, 1, 21, 1, 21, 1, 21, 3, 21, 217, 8, 21, 5, 21, 219, 8,
+		21, 10, 21, 12, 21, 222, 9, 21, 1, 21, 1, 21, 1, 22, 1, 22, 1, 22, 1, 22,
+		5, 22, 230, 8, 22, 10, 22, 12, 22, 233, 9, 22, 1, 22, 3, 22, 236, 8, 22,
+		1, 23, 1, 23, 1, 23, 1, 23, 0, 0, 24, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18,
+		20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 0, 4, 2, 0, 43,
+		43, 47, 48, 1, 0, 44, 45, 1, 0, 53, 54, 1, 0, 11, 12, 259, 0, 63, 1, 0,
+		0, 0, 2, 65, 1, 0, 0, 0, 4, 79, 1, 0, 0, 0, 6, 82, 1, 0, 0, 0, 8, 108,
+		1, 0, 0, 0, 10, 116, 1, 0, 0, 0, 12, 118, 1, 0, 0, 0, 14, 126, 1, 0, 0,
+		0, 16, 128, 1, 0, 0, 0, 18, 132, 1, 0, 0, 0, 20, 135, 1, 0, 0, 0, 22, 138,
+		1, 0, 0, 0, 24, 150, 1, 0, 0, 0, 26, 154, 1, 0, 0, 0, 28, 168, 1, 0, 0,
+		0, 30, 170, 1, 0, 0, 0, 32, 174, 1, 0, 0, 0, 34, 178, 1, 0, 0, 0, 36, 182,
+		1, 0, 0, 0, 38, 187, 1, 0, 0, 0, 40, 200, 1, 0, 0, 0, 42, 209, 1, 0, 0,
+		0, 44, 225, 1, 0, 0, 0, 46, 237, 1, 0, 0, 0, 48, 50, 3, 2, 1, 0, 49, 48,
+		1, 0, 0, 0, 50, 51, 1, 0, 0, 0, 51, 49, 1, 0, 0, 0, 51, 52, 1, 0, 0, 0,
+		52, 60, 1, 0, 0, 0, 53, 56, 3, 4, 2, 0, 54, 56, 3, 6, 3, 0, 55, 53, 1,
+		0, 0, 0, 55, 54, 1, 0, 0, 0, 56, 57, 1, 0, 0, 0, 57, 55, 1, 0, 0, 0, 57,
+		58, 1, 0, 0, 0, 58, 60, 1, 0, 0, 0, 59, 49, 1, 0, 0, 0, 59, 55, 1, 0, 0,
+		0, 60, 61, 1, 0, 0, 0, 61, 62, 5, 0, 0, 1, 62, 64, 1, 0, 0, 0, 63, 59,
+		1, 0, 0, 0, 63, 64, 1, 0, 0, 0, 64, 1, 1, 0, 0, 0, 65, 66, 5, 1, 0, 0,
+		66, 67, 5, 5, 0, 0, 67, 74, 5, 2, 0, 0, 68, 73, 3, 4, 2, 0, 69, 73, 3,
+		6, 3, 0, 70, 73, 3, 8, 4, 0, 71, 73, 3, 42, 21, 0, 72, 68, 1, 0, 0, 0,
+		72, 69, 1, 0, 0, 0, 72, 70, 1, 0, 0, 0, 72, 71, 1, 0, 0, 0, 73, 76, 1,
+		0, 0, 0, 74, 72, 1, 0, 0, 0, 74, 75, 1, 0, 0, 0, 75, 77, 1, 0, 0, 0, 76,
+		74, 1, 0, 0, 0, 77, 78, 5, 3, 0, 0, 78, 3, 1, 0, 0, 0, 79, 80, 5, 4, 0,
+		0, 80, 81, 5, 5, 0, 0, 81, 5, 1, 0, 0, 0, 82, 84, 5, 7, 0, 0, 83, 85, 3,
+		26, 13, 0, 84, 83, 1, 0, 0, 0, 84, 85, 1, 0, 0, 0, 85, 86, 1, 0, 0, 0,
+		86, 88, 5, 14, 0, 0, 87, 89, 5, 21, 0, 0, 88, 87, 1, 0, 0, 0, 88, 89, 1,
+		0, 0, 0, 89, 101, 1, 0, 0, 0, 90, 98, 3, 24, 12, 0, 91, 97, 3, 18, 9, 0,
+		92, 97, 3, 20, 10, 0, 93, 97, 3, 22, 11, 0, 94, 95, 5, 21, 0, 0, 95, 97,
+		3, 24, 12, 0, 96, 91, 1, 0, 0, 0, 96, 92, 1, 0, 0, 0, 96, 93, 1, 0, 0,
+		0, 96, 94, 1, 0, 0, 0, 97, 100, 1, 0, 0, 0, 98, 96, 1, 0, 0, 0, 98, 99,
+		1, 0, 0, 0, 99, 102, 1, 0, 0, 0, 100, 98, 1, 0, 0, 0, 101, 90, 1, 0, 0,
+		0, 101, 102, 1, 0, 0, 0, 102, 104, 1, 0, 0, 0, 103, 105, 5, 21, 0, 0, 104,
+		103, 1, 0, 0, 0, 104, 105, 1, 0, 0, 0, 105, 106, 1, 0, 0, 0, 106, 107,
+		5, 17, 0, 0, 107, 7, 1, 0, 0, 0, 108, 109, 5, 7, 0, 0, 109, 110, 5, 15,
+		0, 0, 110, 111, 3, 10, 5, 0, 111, 112, 5, 41, 0, 0, 112, 9, 1, 0, 0, 0,
+		113, 117, 3, 12, 6, 0, 114, 117, 3, 14, 7, 0, 115, 117, 3, 16, 8, 0, 116,
+		113, 1, 0, 0, 0, 116, 114, 1, 0, 0, 0, 116, 115, 1, 0, 0, 0, 117, 11, 1,
+		0, 0, 0, 118, 119, 7, 0, 0, 0, 119, 13, 1, 0, 0, 0, 120, 121, 5, 46, 0,
+		0, 121, 127, 3, 10, 5, 0, 122, 123, 5, 49, 0, 0, 123, 124, 3, 10, 5, 0,
+		124, 125, 5, 50, 0, 0, 125, 127, 1, 0, 0, 0, 126, 120, 1, 0, 0, 0, 126,
+		122, 1, 0, 0, 0, 127, 15, 1, 0, 0, 0, 128, 129, 5, 43, 0, 0, 129, 130,
+		7, 1, 0, 0, 130, 131, 3, 10, 5, 0, 131, 17, 1, 0, 0, 0, 132, 133, 5, 22,
+		0, 0, 133, 134, 3, 24, 12, 0, 134, 19, 1, 0, 0, 0, 135, 136, 5, 23, 0,
+		0, 136, 137, 3, 24, 12, 0, 137, 21, 1, 0, 0, 0, 138, 139, 5, 24, 0, 0,
+		139, 140, 3, 24, 12, 0, 140, 23, 1, 0, 0, 0, 141, 151, 5, 30, 0, 0, 142,
+		151, 5, 29, 0, 0, 143, 151, 5, 25, 0, 0, 144, 151, 5, 27, 0, 0, 145, 151,
+		5, 18, 0, 0, 146, 151, 5, 26, 0, 0, 147, 151, 5, 19, 0, 0, 148, 151, 5,
+		20, 0, 0, 149, 151, 3, 40, 20, 0, 150, 141, 1, 0, 0, 0, 150, 142, 1, 0,
+		0, 0, 150, 143, 1, 0, 0, 0, 150, 144, 1, 0, 0, 0, 150, 145, 1, 0, 0, 0,
+		150, 146, 1, 0, 0, 0, 150, 147, 1, 0, 0, 0, 150, 148, 1, 0, 0, 0, 150,
+		149, 1, 0, 0, 0, 151, 152, 1, 0, 0, 0, 152, 150, 1, 0, 0, 0, 152, 153,
+		1, 0, 0, 0, 153, 25, 1, 0, 0, 0, 154, 158, 5, 13, 0, 0, 155, 157, 3, 28,
+		14, 0, 156, 155, 1, 0, 0, 0, 157, 160, 1, 0, 0, 0, 158, 156, 1, 0, 0, 0,
+		158, 159, 1, 0, 0, 0, 159, 161, 1, 0, 0, 0, 160, 158, 1, 0, 0, 0, 161,
+		162, 5, 31, 0, 0, 162, 27, 1, 0, 0, 0, 163, 169, 3, 30, 15, 0, 164, 169,
+		3, 32, 16, 0, 165, 169, 3, 34, 17, 0, 166, 169, 3, 36, 18, 0, 167, 169,
+		3, 38, 19, 0, 168, 163, 1, 0, 0, 0, 168, 164, 1, 0, 0, 0, 168, 165, 1,
+		0, 0, 0, 168, 166, 1, 0, 0, 0, 168, 167, 1, 0, 0, 0, 169, 29, 1, 0, 0,
+		0, 170, 171, 5, 32, 0, 0, 171, 172, 5, 33, 0, 0, 172, 173, 5, 34, 0, 0,
+		173, 31, 1, 0, 0, 0, 174, 175, 5, 32, 0, 0, 175, 176, 5, 33, 0, 0, 176,
+		177, 5, 32, 0, 0, 177, 33, 1, 0, 0, 0, 178, 179, 5, 32, 0, 0, 179, 180,
+		5, 33, 0, 0, 180, 181, 5, 39, 0, 0, 181, 35, 1, 0, 0, 0, 182, 185, 5, 32,
+		0, 0, 183, 184, 5, 33, 0, 0, 184, 186, 5, 38, 0, 0, 185, 183, 1, 0, 0,
+		0, 185, 186, 1, 0, 0, 0, 186, 37, 1, 0, 0, 0, 187, 188, 5, 32, 0, 0, 188,
+		189, 5, 33, 0, 0, 189, 190, 5, 35, 0, 0, 190, 195, 5, 32, 0, 0, 191, 192,
+		5, 36, 0, 0, 192, 194, 5, 32, 0, 0, 193, 191, 1, 0, 0, 0, 194, 197, 1,
+		0, 0, 0, 195, 193, 1, 0, 0, 0, 195, 196, 1, 0, 0, 0, 196, 198, 1, 0, 0,
+		0, 197, 195, 1, 0, 0, 0, 198, 199, 5, 37, 0, 0, 199, 39, 1, 0, 0, 0, 200,
+		204, 5, 28, 0, 0, 201, 203, 7, 2, 0, 0, 202, 201, 1, 0, 0, 0, 203, 206,
+		1, 0, 0, 0, 204, 202, 1, 0, 0, 0, 204, 205, 1, 0, 0, 0, 205, 207, 1, 0,
+		0, 0, 206, 204, 1, 0, 0, 0, 207, 208, 5, 52, 0, 0, 208, 41, 1, 0, 0, 0,
+		209, 210, 5, 8, 0, 0, 210, 211, 5, 5, 0, 0, 211, 220, 5, 2, 0, 0, 212,
+		219, 3, 44, 22, 0, 213, 219, 5, 9, 0, 0, 214, 216, 5, 10, 0, 0, 215, 217,
+		7, 3, 0, 0, 216, 215, 1, 0, 0, 0, 216, 217, 1, 0, 0, 0, 217, 219, 1, 0,
+		0, 0, 218, 212, 1, 0, 0, 0, 218, 213, 1, 0, 0, 0, 218, 214, 1, 0, 0, 0,
+		219, 222, 1, 0, 0, 0, 220, 218, 1, 0, 0, 0, 220, 221, 1, 0, 0, 0, 221,
+		223, 1, 0, 0, 0, 222, 220, 1, 0, 0, 0, 223, 224, 5, 3, 0, 0, 224, 43, 1,
+		0, 0, 0, 225, 226, 5, 4, 0, 0, 226, 235, 5, 5, 0, 0, 227, 231, 5, 2, 0,
+		0, 228, 230, 3, 46, 23, 0, 229, 228, 1, 0, 0, 0, 230, 233, 1, 0, 0, 0,
+		231, 229, 1, 0, 0, 0, 231, 232, 1, 0, 0, 0, 232, 234, 1, 0, 0, 0, 233,
+		231, 1, 0, 0, 0, 234, 236, 5, 3, 0, 0, 235, 227, 1, 0, 0, 0, 235, 236,
+		1, 0, 0, 0, 236, 45, 1, 0, 0, 0, 237, 238, 5, 1, 0, 0, 238, 239, 5, 5,
+		0, 0, 239, 47, 1, 0, 0, 0, 27, 51, 55, 57, 59, 63, 72, 74, 84, 88, 96,
+		98, 101, 104, 116, 126, 150, 152, 158, 168, 185, 195, 204, 216, 218, 220,
+		231, 235,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
 	staticData.atn = deserializer.Deserialize(staticData.serializedATN)
@@ -296,6 +298,7 @@ type IParseContext interface {
 	GetParser() antlr.Parser
 
 	// Getter signatures
+	EOF() antlr.TerminalNode
 	AllFileDecl() []IFileDeclContext
 	FileDecl(i int) IFileDeclContext
 	AllPackageDecl() []IPackageDeclContext
@@ -338,6 +341,10 @@ func NewParseContext(parser antlr.Parser, parent antlr.ParserRuleContext, invoki
 }
 
 func (s *ParseContext) GetParser() antlr.Parser { return s.parser }
+
+func (s *ParseContext) EOF() antlr.TerminalNode {
+	return s.GetToken(ReDSLParserEOF, 0)
+}
 
 func (s *ParseContext) AllFileDecl() []IFileDeclContext {
 	children := s.GetChildren()
@@ -488,78 +495,97 @@ func (p *ReDSLParser) Parse() (localctx IParseContext) {
 	var _la int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(59)
+	p.SetState(63)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
-	switch p.GetTokenStream().LA(1) {
-	case ReDSLParserFILE_KEYWORD:
-		p.SetState(49)
+	_la = p.GetTokenStream().LA(1)
+
+	if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&146) != 0 {
+		p.SetState(59)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
 		}
-		_la = p.GetTokenStream().LA(1)
 
-		for ok := true; ok; ok = _la == ReDSLParserFILE_KEYWORD {
-			{
-				p.SetState(48)
-				p.FileDecl()
-			}
-
-			p.SetState(51)
+		switch p.GetTokenStream().LA(1) {
+		case ReDSLParserFILE_KEYWORD:
+			p.SetState(49)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
 			}
 			_la = p.GetTokenStream().LA(1)
-		}
 
-	case ReDSLParserPACKAGE_KEYWORD, ReDSLParserREQ_DEF:
-		p.SetState(55)
-		p.GetErrorHandler().Sync(p)
-		if p.HasError() {
-			goto errorExit
-		}
-		_la = p.GetTokenStream().LA(1)
+			for ok := true; ok; ok = _la == ReDSLParserFILE_KEYWORD {
+				{
+					p.SetState(48)
+					p.FileDecl()
+				}
 
-		for ok := true; ok; ok = _la == ReDSLParserPACKAGE_KEYWORD || _la == ReDSLParserREQ_DEF {
+				p.SetState(51)
+				p.GetErrorHandler().Sync(p)
+				if p.HasError() {
+					goto errorExit
+				}
+				_la = p.GetTokenStream().LA(1)
+			}
+
+		case ReDSLParserPACKAGE_KEYWORD, ReDSLParserREQ_DEF:
 			p.SetState(55)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
 			}
-
-			switch p.GetTokenStream().LA(1) {
-			case ReDSLParserPACKAGE_KEYWORD:
-				{
-					p.SetState(53)
-					p.PackageDecl()
-				}
-
-			case ReDSLParserREQ_DEF:
-				{
-					p.SetState(54)
-					p.RequirementDecl()
-				}
-
-			default:
-				p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
-				goto errorExit
-			}
-
-			p.SetState(57)
-			p.GetErrorHandler().Sync(p)
-			if p.HasError() {
-				goto errorExit
-			}
 			_la = p.GetTokenStream().LA(1)
+
+			for ok := true; ok; ok = _la == ReDSLParserPACKAGE_KEYWORD || _la == ReDSLParserREQ_DEF {
+				p.SetState(55)
+				p.GetErrorHandler().Sync(p)
+				if p.HasError() {
+					goto errorExit
+				}
+
+				switch p.GetTokenStream().LA(1) {
+				case ReDSLParserPACKAGE_KEYWORD:
+					{
+						p.SetState(53)
+						p.PackageDecl()
+					}
+
+				case ReDSLParserREQ_DEF:
+					{
+						p.SetState(54)
+						p.RequirementDecl()
+					}
+
+				default:
+					p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
+					goto errorExit
+				}
+
+				p.SetState(57)
+				p.GetErrorHandler().Sync(p)
+				if p.HasError() {
+					goto errorExit
+				}
+				_la = p.GetTokenStream().LA(1)
+			}
+
+		default:
+			p.SetError(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
+			goto errorExit
+		}
+		{
+			p.SetState(61)
+			p.Match(ReDSLParserEOF)
+			if p.HasError() {
+				// Recognition error - abort rule
+				goto errorExit
+			}
 		}
 
-	case ReDSLParserEOF:
-
-	default:
 	}
 
 errorExit:
@@ -839,7 +865,7 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(61)
+		p.SetState(65)
 		p.Match(ReDSLParserFILE_KEYWORD)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -847,7 +873,7 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 		}
 	}
 	{
-		p.SetState(62)
+		p.SetState(66)
 		p.Match(ReDSLParserID_STR)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -855,14 +881,14 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 		}
 	}
 	{
-		p.SetState(63)
+		p.SetState(67)
 		p.Match(ReDSLParserBLOCK_START)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(70)
+	p.SetState(74)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -870,34 +896,34 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 	_la = p.GetTokenStream().LA(1)
 
 	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&400) != 0 {
-		p.SetState(68)
+		p.SetState(72)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
 		}
 
-		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 4, p.GetParserRuleContext()) {
+		switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 5, p.GetParserRuleContext()) {
 		case 1:
 			{
-				p.SetState(64)
+				p.SetState(68)
 				p.PackageDecl()
 			}
 
 		case 2:
 			{
-				p.SetState(65)
+				p.SetState(69)
 				p.RequirementDecl()
 			}
 
 		case 3:
 			{
-				p.SetState(66)
+				p.SetState(70)
 				p.RequirementDeduction()
 			}
 
 		case 4:
 			{
-				p.SetState(67)
+				p.SetState(71)
 				p.DocumentDecl()
 			}
 
@@ -905,7 +931,7 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 			goto errorExit
 		}
 
-		p.SetState(72)
+		p.SetState(76)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -913,7 +939,7 @@ func (p *ReDSLParser) FileDecl() (localctx IFileDeclContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(73)
+		p.SetState(77)
 		p.Match(ReDSLParserBLOCK_END)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1014,7 +1040,7 @@ func (p *ReDSLParser) PackageDecl() (localctx IPackageDeclContext) {
 	p.EnterRule(localctx, 4, ReDSLParserRULE_packageDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(75)
+		p.SetState(79)
 		p.Match(ReDSLParserPACKAGE_KEYWORD)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1022,7 +1048,7 @@ func (p *ReDSLParser) PackageDecl() (localctx IPackageDeclContext) {
 		}
 	}
 	{
-		p.SetState(76)
+		p.SetState(80)
 		p.Match(ReDSLParserID_STR)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1331,14 +1357,14 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(78)
+		p.SetState(82)
 		p.Match(ReDSLParserREQ_DEF)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(80)
+	p.SetState(84)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1347,25 +1373,25 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 
 	if _la == ReDSLParserPARAM_START {
 		{
-			p.SetState(79)
+			p.SetState(83)
 			p.ParameterBlock()
 		}
 
 	}
 	{
-		p.SetState(82)
+		p.SetState(86)
 		p.Match(ReDSLParserTEXT_START)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(84)
+	p.SetState(88)
 	p.GetErrorHandler().Sync(p)
 
-	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 7, p.GetParserRuleContext()) == 1 {
+	if p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 8, p.GetParserRuleContext()) == 1 {
 		{
-			p.SetState(83)
+			p.SetState(87)
 			p.Match(ReDSLParserTEXT_NEXT_PARA)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1376,7 +1402,7 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 	} else if p.HasError() { // JIM
 		goto errorExit
 	}
-	p.SetState(97)
+	p.SetState(101)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1385,22 +1411,22 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 
 	if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&2115764224) != 0 {
 		{
-			p.SetState(86)
+			p.SetState(90)
 			p.RunningText()
 		}
 
-		p.SetState(94)
+		p.SetState(98)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
 		}
-		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 9, p.GetParserRuleContext())
+		_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 10, p.GetParserRuleContext())
 		if p.HasError() {
 			goto errorExit
 		}
 		for _alt != 2 && _alt != antlr.ATNInvalidAltNumber {
 			if _alt == 1 {
-				p.SetState(92)
+				p.SetState(96)
 				p.GetErrorHandler().Sync(p)
 				if p.HasError() {
 					goto errorExit
@@ -1409,25 +1435,25 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 				switch p.GetTokenStream().LA(1) {
 				case ReDSLParserTEXT_EXAMPLE_MARKER:
 					{
-						p.SetState(87)
+						p.SetState(91)
 						p.ExampleDecl()
 					}
 
 				case ReDSLParserTEXT_RATIO_MARKER:
 					{
-						p.SetState(88)
+						p.SetState(92)
 						p.RationaleDecl()
 					}
 
 				case ReDSLParserTEXT_REF_MARKER:
 					{
-						p.SetState(89)
+						p.SetState(93)
 						p.ReferenceDecl()
 					}
 
 				case ReDSLParserTEXT_NEXT_PARA:
 					{
-						p.SetState(90)
+						p.SetState(94)
 						p.Match(ReDSLParserTEXT_NEXT_PARA)
 						if p.HasError() {
 							// Recognition error - abort rule
@@ -1435,7 +1461,7 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 						}
 					}
 					{
-						p.SetState(91)
+						p.SetState(95)
 						p.RunningText()
 					}
 
@@ -1445,19 +1471,19 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 				}
 
 			}
-			p.SetState(96)
+			p.SetState(100)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
 			}
-			_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 9, p.GetParserRuleContext())
+			_alt = p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 10, p.GetParserRuleContext())
 			if p.HasError() {
 				goto errorExit
 			}
 		}
 
 	}
-	p.SetState(100)
+	p.SetState(104)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -1466,7 +1492,7 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 
 	if _la == ReDSLParserTEXT_NEXT_PARA {
 		{
-			p.SetState(99)
+			p.SetState(103)
 			p.Match(ReDSLParserTEXT_NEXT_PARA)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -1476,7 +1502,7 @@ func (p *ReDSLParser) RequirementDecl() (localctx IRequirementDeclContext) {
 
 	}
 	{
-		p.SetState(102)
+		p.SetState(106)
 		p.Match(ReDSLParserTEXT_CLOSE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1599,7 +1625,7 @@ func (p *ReDSLParser) RequirementDeduction() (localctx IRequirementDeductionCont
 	p.EnterRule(localctx, 8, ReDSLParserRULE_requirementDeduction)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(104)
+		p.SetState(108)
 		p.Match(ReDSLParserREQ_DEF)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1607,7 +1633,7 @@ func (p *ReDSLParser) RequirementDeduction() (localctx IRequirementDeductionCont
 		}
 	}
 	{
-		p.SetState(105)
+		p.SetState(109)
 		p.Match(ReDSLParserDEDUCT_START)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1615,11 +1641,11 @@ func (p *ReDSLParser) RequirementDeduction() (localctx IRequirementDeductionCont
 		}
 	}
 	{
-		p.SetState(106)
+		p.SetState(110)
 		p.LogicalExpression()
 	}
 	{
-		p.SetState(107)
+		p.SetState(111)
 		p.Match(ReDSLParserDEDUCT_CLOSE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -1759,31 +1785,31 @@ func (s *LogicalExpressionContext) ExitRule(listener antlr.ParseTreeListener) {
 func (p *ReDSLParser) LogicalExpression() (localctx ILogicalExpressionContext) {
 	localctx = NewLogicalExpressionContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 10, ReDSLParserRULE_logicalExpression)
-	p.SetState(112)
+	p.SetState(116)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 
-	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 12, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 13, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(109)
+			p.SetState(113)
 			p.LogicalAtom()
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(110)
+			p.SetState(114)
 			p.LogicalUnaryExpression()
 		}
 
 	case 3:
 		p.EnterOuterAlt(localctx, 3)
 		{
-			p.SetState(111)
+			p.SetState(115)
 			p.LogicalBinaryExpression()
 		}
 
@@ -1891,7 +1917,7 @@ func (p *ReDSLParser) LogicalAtom() (localctx ILogicalAtomContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(114)
+		p.SetState(118)
 		_la = p.GetTokenStream().LA(1)
 
 		if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&431008558088192) != 0) {
@@ -2015,7 +2041,7 @@ func (s *LogicalUnaryExpressionContext) ExitRule(listener antlr.ParseTreeListene
 func (p *ReDSLParser) LogicalUnaryExpression() (localctx ILogicalUnaryExpressionContext) {
 	localctx = NewLogicalUnaryExpressionContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 14, ReDSLParserRULE_logicalUnaryExpression)
-	p.SetState(122)
+	p.SetState(126)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2025,7 +2051,7 @@ func (p *ReDSLParser) LogicalUnaryExpression() (localctx ILogicalUnaryExpression
 	case ReDSLParserDEDUCT_NOT:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(116)
+			p.SetState(120)
 			p.Match(ReDSLParserDEDUCT_NOT)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2033,14 +2059,14 @@ func (p *ReDSLParser) LogicalUnaryExpression() (localctx ILogicalUnaryExpression
 			}
 		}
 		{
-			p.SetState(117)
+			p.SetState(121)
 			p.LogicalExpression()
 		}
 
 	case ReDSLParserDEDUCT_LPAREN:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(118)
+			p.SetState(122)
 			p.Match(ReDSLParserDEDUCT_LPAREN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2048,11 +2074,11 @@ func (p *ReDSLParser) LogicalUnaryExpression() (localctx ILogicalUnaryExpression
 			}
 		}
 		{
-			p.SetState(119)
+			p.SetState(123)
 			p.LogicalExpression()
 		}
 		{
-			p.SetState(120)
+			p.SetState(124)
 			p.Match(ReDSLParserDEDUCT_RPAREN)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -2182,7 +2208,7 @@ func (p *ReDSLParser) LogicalBinaryExpression() (localctx ILogicalBinaryExpressi
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(124)
+		p.SetState(128)
 		p.Match(ReDSLParserDEDUCT_RE_ID_REF)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2190,7 +2216,7 @@ func (p *ReDSLParser) LogicalBinaryExpression() (localctx ILogicalBinaryExpressi
 		}
 	}
 	{
-		p.SetState(125)
+		p.SetState(129)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == ReDSLParserDEDUCT_AND || _la == ReDSLParserDEDUCT_OR) {
@@ -2201,7 +2227,7 @@ func (p *ReDSLParser) LogicalBinaryExpression() (localctx ILogicalBinaryExpressi
 		}
 	}
 	{
-		p.SetState(126)
+		p.SetState(130)
 		p.LogicalExpression()
 	}
 
@@ -2310,7 +2336,7 @@ func (p *ReDSLParser) ExampleDecl() (localctx IExampleDeclContext) {
 	p.EnterRule(localctx, 18, ReDSLParserRULE_exampleDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(128)
+		p.SetState(132)
 		p.Match(ReDSLParserTEXT_EXAMPLE_MARKER)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2318,7 +2344,7 @@ func (p *ReDSLParser) ExampleDecl() (localctx IExampleDeclContext) {
 		}
 	}
 	{
-		p.SetState(129)
+		p.SetState(133)
 		p.RunningText()
 	}
 
@@ -2427,7 +2453,7 @@ func (p *ReDSLParser) RationaleDecl() (localctx IRationaleDeclContext) {
 	p.EnterRule(localctx, 20, ReDSLParserRULE_rationaleDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(131)
+		p.SetState(135)
 		p.Match(ReDSLParserTEXT_RATIO_MARKER)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2435,7 +2461,7 @@ func (p *ReDSLParser) RationaleDecl() (localctx IRationaleDeclContext) {
 		}
 	}
 	{
-		p.SetState(132)
+		p.SetState(136)
 		p.RunningText()
 	}
 
@@ -2544,7 +2570,7 @@ func (p *ReDSLParser) ReferenceDecl() (localctx IReferenceDeclContext) {
 	p.EnterRule(localctx, 22, ReDSLParserRULE_referenceDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(134)
+		p.SetState(138)
 		p.Match(ReDSLParserTEXT_REF_MARKER)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -2552,7 +2578,7 @@ func (p *ReDSLParser) ReferenceDecl() (localctx IReferenceDeclContext) {
 		}
 	}
 	{
-		p.SetState(135)
+		p.SetState(139)
 		p.RunningText()
 	}
 
@@ -2763,7 +2789,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 	var _la int
 
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(146)
+	p.SetState(150)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -2771,7 +2797,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 	_la = p.GetTokenStream().LA(1)
 
 	for ok := true; ok; ok = ((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&2115764224) != 0) {
-		p.SetState(146)
+		p.SetState(150)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -2780,7 +2806,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 		switch p.GetTokenStream().LA(1) {
 		case ReDSLParserTEXT_CONTENT:
 			{
-				p.SetState(137)
+				p.SetState(141)
 				p.Match(ReDSLParserTEXT_CONTENT)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2790,7 +2816,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_ESC_SEQ:
 			{
-				p.SetState(138)
+				p.SetState(142)
 				p.Match(ReDSLParserTEXT_ESC_SEQ)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2800,7 +2826,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_RE_ID_REF:
 			{
-				p.SetState(139)
+				p.SetState(143)
 				p.Match(ReDSLParserTEXT_RE_ID_REF)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2810,7 +2836,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_TERM_REF:
 			{
-				p.SetState(140)
+				p.SetState(144)
 				p.Match(ReDSLParserTEXT_TERM_REF)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2820,7 +2846,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_COMMENT:
 			{
-				p.SetState(141)
+				p.SetState(145)
 				p.Match(ReDSLParserTEXT_COMMENT)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2830,7 +2856,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_URI:
 			{
-				p.SetState(142)
+				p.SetState(146)
 				p.Match(ReDSLParserTEXT_URI)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2840,7 +2866,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_WS:
 			{
-				p.SetState(143)
+				p.SetState(147)
 				p.Match(ReDSLParserTEXT_WS)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2850,7 +2876,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_LINE_BREAK:
 			{
-				p.SetState(144)
+				p.SetState(148)
 				p.Match(ReDSLParserTEXT_LINE_BREAK)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -2860,7 +2886,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 
 		case ReDSLParserTEXT_START_MATH:
 			{
-				p.SetState(145)
+				p.SetState(149)
 				p.MathModeExpression()
 			}
 
@@ -2869,7 +2895,7 @@ func (p *ReDSLParser) RunningText() (localctx IRunningTextContext) {
 			goto errorExit
 		}
 
-		p.SetState(148)
+		p.SetState(152)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3015,14 +3041,14 @@ func (p *ReDSLParser) ParameterBlock() (localctx IParameterBlockContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(150)
+		p.SetState(154)
 		p.Match(ReDSLParserPARAM_START)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(154)
+	p.SetState(158)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3031,11 +3057,11 @@ func (p *ReDSLParser) ParameterBlock() (localctx IParameterBlockContext) {
 
 	for _la == ReDSLParserPARAM_ID {
 		{
-			p.SetState(151)
+			p.SetState(155)
 			p.ParamDecl()
 		}
 
-		p.SetState(156)
+		p.SetState(160)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3043,7 +3069,7 @@ func (p *ReDSLParser) ParameterBlock() (localctx IParameterBlockContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(157)
+		p.SetState(161)
 		p.Match(ReDSLParserPARAM_CLOSE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3218,40 +3244,40 @@ func (p *ReDSLParser) ParamDecl() (localctx IParamDeclContext) {
 	localctx = NewParamDeclContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 28, ReDSLParserRULE_paramDecl)
 	p.EnterOuterAlt(localctx, 1)
-	p.SetState(164)
+	p.SetState(168)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 
-	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 17, p.GetParserRuleContext()) {
+	switch p.GetInterpreter().AdaptivePredict(p.BaseParser, p.GetTokenStream(), 18, p.GetParserRuleContext()) {
 	case 1:
 		{
-			p.SetState(159)
+			p.SetState(163)
 			p.StringParamDecl()
 		}
 
 	case 2:
 		{
-			p.SetState(160)
+			p.SetState(164)
 			p.IdParamDecl()
 		}
 
 	case 3:
 		{
-			p.SetState(161)
+			p.SetState(165)
 			p.NumericParamDecl()
 		}
 
 	case 4:
 		{
-			p.SetState(162)
+			p.SetState(166)
 			p.BoolParamDecl()
 		}
 
 	case 5:
 		{
-			p.SetState(163)
+			p.SetState(167)
 			p.IdListParamDecl()
 		}
 
@@ -3357,7 +3383,7 @@ func (p *ReDSLParser) StringParamDecl() (localctx IStringParamDeclContext) {
 	p.EnterRule(localctx, 30, ReDSLParserRULE_stringParamDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(166)
+		p.SetState(170)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3365,7 +3391,7 @@ func (p *ReDSLParser) StringParamDecl() (localctx IStringParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(167)
+		p.SetState(171)
 		p.Match(ReDSLParserPARAM_EQUALS)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3373,7 +3399,7 @@ func (p *ReDSLParser) StringParamDecl() (localctx IStringParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(168)
+		p.SetState(172)
 		p.Match(ReDSLParserPARAM_STRING)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3479,7 +3505,7 @@ func (p *ReDSLParser) IdParamDecl() (localctx IIdParamDeclContext) {
 	p.EnterRule(localctx, 32, ReDSLParserRULE_idParamDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(170)
+		p.SetState(174)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3487,7 +3513,7 @@ func (p *ReDSLParser) IdParamDecl() (localctx IIdParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(171)
+		p.SetState(175)
 		p.Match(ReDSLParserPARAM_EQUALS)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3495,7 +3521,7 @@ func (p *ReDSLParser) IdParamDecl() (localctx IIdParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(172)
+		p.SetState(176)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3601,7 +3627,7 @@ func (p *ReDSLParser) NumericParamDecl() (localctx INumericParamDeclContext) {
 	p.EnterRule(localctx, 34, ReDSLParserRULE_numericParamDecl)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(174)
+		p.SetState(178)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3609,7 +3635,7 @@ func (p *ReDSLParser) NumericParamDecl() (localctx INumericParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(175)
+		p.SetState(179)
 		p.Match(ReDSLParserPARAM_EQUALS)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3617,7 +3643,7 @@ func (p *ReDSLParser) NumericParamDecl() (localctx INumericParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(176)
+		p.SetState(180)
 		p.Match(ReDSLParserPARAM_NUMBER)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3725,14 +3751,14 @@ func (p *ReDSLParser) BoolParamDecl() (localctx IBoolParamDeclContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(178)
+		p.SetState(182)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(181)
+	p.SetState(185)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3741,7 +3767,7 @@ func (p *ReDSLParser) BoolParamDecl() (localctx IBoolParamDeclContext) {
 
 	if _la == ReDSLParserPARAM_EQUALS {
 		{
-			p.SetState(179)
+			p.SetState(183)
 			p.Match(ReDSLParserPARAM_EQUALS)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3749,7 +3775,7 @@ func (p *ReDSLParser) BoolParamDecl() (localctx IBoolParamDeclContext) {
 			}
 		}
 		{
-			p.SetState(180)
+			p.SetState(184)
 			p.Match(ReDSLParserPARAM_BOOL)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3879,7 +3905,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(183)
+		p.SetState(187)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3887,7 +3913,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(184)
+		p.SetState(188)
 		p.Match(ReDSLParserPARAM_EQUALS)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3896,7 +3922,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 	}
 
 	{
-		p.SetState(185)
+		p.SetState(189)
 		p.Match(ReDSLParserPARAM_ID_LIST_START)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -3904,14 +3930,14 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 		}
 	}
 	{
-		p.SetState(186)
+		p.SetState(190)
 		p.Match(ReDSLParserPARAM_ID)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(191)
+	p.SetState(195)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -3920,7 +3946,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 
 	for _la == ReDSLParserPARAM_ID_LIST_SEP {
 		{
-			p.SetState(187)
+			p.SetState(191)
 			p.Match(ReDSLParserPARAM_ID_LIST_SEP)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3928,7 +3954,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 			}
 		}
 		{
-			p.SetState(188)
+			p.SetState(192)
 			p.Match(ReDSLParserPARAM_ID)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -3936,7 +3962,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 			}
 		}
 
-		p.SetState(193)
+		p.SetState(197)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -3944,7 +3970,7 @@ func (p *ReDSLParser) IdListParamDecl() (localctx IIdListParamDeclContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(194)
+		p.SetState(198)
 		p.Match(ReDSLParserPARAM_ID_LIST_END)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4067,14 +4093,14 @@ func (p *ReDSLParser) MathModeExpression() (localctx IMathModeExpressionContext)
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(196)
+		p.SetState(200)
 		p.Match(ReDSLParserTEXT_START_MATH)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(200)
+	p.SetState(204)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -4083,7 +4109,7 @@ func (p *ReDSLParser) MathModeExpression() (localctx IMathModeExpressionContext)
 
 	for _la == ReDSLParserMATH_ESC_SEQ || _la == ReDSLParserMATH_CONTENT {
 		{
-			p.SetState(197)
+			p.SetState(201)
 			_la = p.GetTokenStream().LA(1)
 
 			if !(_la == ReDSLParserMATH_ESC_SEQ || _la == ReDSLParserMATH_CONTENT) {
@@ -4094,7 +4120,7 @@ func (p *ReDSLParser) MathModeExpression() (localctx IMathModeExpressionContext)
 			}
 		}
 
-		p.SetState(202)
+		p.SetState(206)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -4102,7 +4128,7 @@ func (p *ReDSLParser) MathModeExpression() (localctx IMathModeExpressionContext)
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(203)
+		p.SetState(207)
 		p.Match(ReDSLParserMATH_CLOSE)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4298,7 +4324,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(205)
+		p.SetState(209)
 		p.Match(ReDSLParserDOCUMENT_KEYWORD)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4306,7 +4332,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 		}
 	}
 	{
-		p.SetState(206)
+		p.SetState(210)
 		p.Match(ReDSLParserID_STR)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4314,14 +4340,14 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 		}
 	}
 	{
-		p.SetState(207)
+		p.SetState(211)
 		p.Match(ReDSLParserBLOCK_START)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(216)
+	p.SetState(220)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -4329,7 +4355,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 	_la = p.GetTokenStream().LA(1)
 
 	for (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&1552) != 0 {
-		p.SetState(214)
+		p.SetState(218)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -4338,13 +4364,13 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 		switch p.GetTokenStream().LA(1) {
 		case ReDSLParserPACKAGE_KEYWORD:
 			{
-				p.SetState(208)
+				p.SetState(212)
 				p.PackageRef()
 			}
 
 		case ReDSLParserVERSION_INFO_KEYWORD:
 			{
-				p.SetState(209)
+				p.SetState(213)
 				p.Match(ReDSLParserVERSION_INFO_KEYWORD)
 				if p.HasError() {
 					// Recognition error - abort rule
@@ -4354,14 +4380,14 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 
 		case ReDSLParserGLOSSARY_KEYWORD:
 			{
-				p.SetState(210)
+				p.SetState(214)
 				p.Match(ReDSLParserGLOSSARY_KEYWORD)
 				if p.HasError() {
 					// Recognition error - abort rule
 					goto errorExit
 				}
 			}
-			p.SetState(212)
+			p.SetState(216)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -4370,7 +4396,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 
 			if _la == ReDSLParserLOCAL_KEYWORD || _la == ReDSLParserGLOBAL_KEYWORD {
 				{
-					p.SetState(211)
+					p.SetState(215)
 					_la = p.GetTokenStream().LA(1)
 
 					if !(_la == ReDSLParserLOCAL_KEYWORD || _la == ReDSLParserGLOBAL_KEYWORD) {
@@ -4388,7 +4414,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 			goto errorExit
 		}
 
-		p.SetState(218)
+		p.SetState(222)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -4396,7 +4422,7 @@ func (p *ReDSLParser) DocumentDecl() (localctx IDocumentDeclContext) {
 		_la = p.GetTokenStream().LA(1)
 	}
 	{
-		p.SetState(219)
+		p.SetState(223)
 		p.Match(ReDSLParserBLOCK_END)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4552,7 +4578,7 @@ func (p *ReDSLParser) PackageRef() (localctx IPackageRefContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(221)
+		p.SetState(225)
 		p.Match(ReDSLParserPACKAGE_KEYWORD)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4560,14 +4586,14 @@ func (p *ReDSLParser) PackageRef() (localctx IPackageRefContext) {
 		}
 	}
 	{
-		p.SetState(222)
+		p.SetState(226)
 		p.Match(ReDSLParserID_STR)
 		if p.HasError() {
 			// Recognition error - abort rule
 			goto errorExit
 		}
 	}
-	p.SetState(231)
+	p.SetState(235)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
@@ -4576,14 +4602,14 @@ func (p *ReDSLParser) PackageRef() (localctx IPackageRefContext) {
 
 	if _la == ReDSLParserBLOCK_START {
 		{
-			p.SetState(223)
+			p.SetState(227)
 			p.Match(ReDSLParserBLOCK_START)
 			if p.HasError() {
 				// Recognition error - abort rule
 				goto errorExit
 			}
 		}
-		p.SetState(227)
+		p.SetState(231)
 		p.GetErrorHandler().Sync(p)
 		if p.HasError() {
 			goto errorExit
@@ -4592,11 +4618,11 @@ func (p *ReDSLParser) PackageRef() (localctx IPackageRefContext) {
 
 		for _la == ReDSLParserFILE_KEYWORD {
 			{
-				p.SetState(224)
+				p.SetState(228)
 				p.FileRef()
 			}
 
-			p.SetState(229)
+			p.SetState(233)
 			p.GetErrorHandler().Sync(p)
 			if p.HasError() {
 				goto errorExit
@@ -4604,7 +4630,7 @@ func (p *ReDSLParser) PackageRef() (localctx IPackageRefContext) {
 			_la = p.GetTokenStream().LA(1)
 		}
 		{
-			p.SetState(230)
+			p.SetState(234)
 			p.Match(ReDSLParserBLOCK_END)
 			if p.HasError() {
 				// Recognition error - abort rule
@@ -4707,7 +4733,7 @@ func (p *ReDSLParser) FileRef() (localctx IFileRefContext) {
 	p.EnterRule(localctx, 46, ReDSLParserRULE_fileRef)
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(233)
+		p.SetState(237)
 		p.Match(ReDSLParserFILE_KEYWORD)
 		if p.HasError() {
 			// Recognition error - abort rule
@@ -4715,7 +4741,7 @@ func (p *ReDSLParser) FileRef() (localctx IFileRefContext) {
 		}
 	}
 	{
-		p.SetState(234)
+		p.SetState(238)
 		p.Match(ReDSLParserID_STR)
 		if p.HasError() {
 			// Recognition error - abort rule

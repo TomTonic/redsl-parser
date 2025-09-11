@@ -4,3 +4,4 @@ Rule: parse
     Terminal: "filename"
     Terminal: {
     Terminal: }
+  Terminal: <EOF>

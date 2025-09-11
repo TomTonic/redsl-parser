@@ -20,3 +20,4 @@ Rule: parse
         Terminal: }
       Terminal: }
     Terminal: }
+  Terminal: <EOF>

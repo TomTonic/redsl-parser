@@ -2,3 +2,4 @@ Rule: parse
   Rule: packageDecl
     Terminal: package
     Terminal: "validPackageName \"test\""
+  Terminal: <EOF>

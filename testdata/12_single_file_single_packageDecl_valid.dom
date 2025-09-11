@@ -7,3 +7,4 @@ Rule: parse
       Terminal: package
       Terminal: "validPackageName"
     Terminal: }
+  Terminal: <EOF>

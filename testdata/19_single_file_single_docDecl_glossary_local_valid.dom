@@ -11,3 +11,4 @@ Rule: parse
       Terminal: local
       Terminal: }
     Terminal: }
+  Terminal: <EOF>

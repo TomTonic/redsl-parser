@@ -11,3 +11,4 @@ Rule: parse
       Terminal: global
       Terminal: }
     Terminal: }
+  Terminal: <EOF>
