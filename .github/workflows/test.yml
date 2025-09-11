@@ -22,14 +22,14 @@ jobs:
           java-version: '21'
 
       - name: Generate parser code with ANTLR
-        run: bash generateParserForTest.sh
+        run: bash generateGoParser.sh
 
       - name: Setup Go
         uses: actions/setup-go@44694675825211faa026b3c33043df3e48a5fa00 # v6.0.0
         with:
-          go-version-file: ./src/go.mod
-          cache-dependency-path: ./src/go.sum
+          go-version-file: go.mod
+          cache-dependency-path: go.sum
 
       - name: Run tests and generate coverage report
-        working-directory: ./src
-        run: go test ./test/... -v --cover
+        working-directory: ./
+        run: go test ./testcode/... -v --cover
