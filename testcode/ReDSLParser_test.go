@@ -1,8 +1,8 @@
-package test
+package testcode
 
 import (
 	"os"
-	redsl_parser "redsl_parser/generated"
+	redsl_parser "redsl_parser"
 	"testing"
 
 	"github.com/antlr4-go/antlr/v4" // Adjust import path if needed
@@ -19,7 +19,7 @@ func (l *SyntaxErrorListener) SyntaxError(recognizer antlr.Recognizer, offending
 }
 
 func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
-	files, err := os.ReadDir("../../testdata")
+	files, err := os.ReadDir("../testdata")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -28,7 +28,7 @@ func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
 		name := file.Name()
 		if !file.IsDir() && len(name) > 6 && name[len(name)-6:] == ".redsl" {
 			t.Run(name, func(t *testing.T) {
-				input, err := os.ReadFile("../../testdata/" + name)
+				input, err := os.ReadFile("../testdata/" + name)
 				if err != nil {
 					t.Fatalf("failed to read file: %v", err)
 				}
@@ -75,7 +75,7 @@ func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
 						return
 					}
 					domStr := dom.PrintTree()
-					domFile := "../../testdata/" + name[:len(name)-6] + ".dom"
+					domFile := "../testdata/" + name[:len(name)-6] + ".dom"
 					expectedDOM, err := os.ReadFile(domFile)
 					if err != nil {
 						t.Errorf("failed to read DOM file: %v, should be:\n%s", err, domStr)
