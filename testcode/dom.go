@@ -1,8 +1,8 @@
-package test
+package testcode
 
 import (
 	"fmt"
-	redsl_parser "redsl_parser/generated"
+	redsl_parser "redsl_parser"
 	"strings"
 
 	"github.com/antlr4-go/antlr/v4"
