@@ -10,3 +10,4 @@ Rule: parse
       Terminal: package
       Terminal: "validPackageName2"
     Terminal: }
+  Terminal: <EOF>

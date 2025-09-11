@@ -6,7 +6,7 @@ options {
 	tokenVocab = ReDSLLexer;
 }
 
-parse: ( fileDecl+ | (packageDecl | requirementDecl)+)?;
+parse: (( fileDecl+ | (packageDecl | requirementDecl)+) EOF)?;
 
 fileDecl:
 	FILE_KEYWORD ID_STR BLOCK_START (

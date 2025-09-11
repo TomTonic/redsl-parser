@@ -12,3 +12,4 @@ Rule: parse
         Terminal: "packageName"
       Terminal: }
     Terminal: }
+  Terminal: <EOF>

@@ -10,3 +10,4 @@ Rule: parse
       Terminal: glossary
       Terminal: }
     Terminal: }
+  Terminal: <EOF>

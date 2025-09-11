@@ -5,3 +5,4 @@ Rule: parse
   Rule: packageDecl
     Terminal: package
     Terminal: "validPackageName2"
+  Terminal: <EOF>
