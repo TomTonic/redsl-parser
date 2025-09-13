@@ -1,0 +1,14 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §a.b
+    Rule: parameterBlock
+      Terminal: [
+      Rule: paramDecl
+        Rule: numericParamDecl
+          Terminal: x
+          Terminal: =
+          Terminal: -1234567890.1234567890e1234
+      Terminal: ]
+    Terminal: {
+    Terminal: }
+  Terminal: <EOF>

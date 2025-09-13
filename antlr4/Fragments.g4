@@ -54,3 +54,5 @@ fragment IdStr: '"' ((~["\\\r\n\f]) | (IdStrEsc))* '"';
 fragment IdStrEsc: ('\\\\' | '\\"' | ('\\' .)) | UnicodeCP;
 
 fragment EscapedQuote: '\\"';
+fragment Digits: [0-9]+;
+fragment Exponent: [eE] [+-]? Digits;

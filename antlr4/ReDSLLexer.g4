@@ -67,7 +67,11 @@ PARAM_ID_LIST_SEP: ',';
 PARAM_ID_LIST_END: '}';
 //PARAM_RE_ID_REF     : ReID ;
 PARAM_BOOL: 'true' | 'false';
-PARAM_NUMBER: '-'? [0-9]+;
+PARAM_NUMBER: [+-]? Digits
+    |   [+-]? Digits '.' Digits Exponent?
+    |   [+-]? '.' Digits Exponent?
+    |   [+-]? Digits Exponent
+    ;
 //PARAM_SEP           : ';' ;
 PARAM_WS: [ \t\r\n] -> skip;
 
