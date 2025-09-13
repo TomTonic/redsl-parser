@@ -45,7 +45,7 @@ func redslparserParserInit() {
 		"TEXT_NEXT_PARA", "TEXT_EXAMPLE_MARKER", "TEXT_RATIO_MARKER", "TEXT_REF_MARKER",
 		"TEXT_RE_ID_REF", "TEXT_URI", "TEXT_TERM_REF", "TEXT_START_MATH", "TEXT_ESC_SEQ",
 		"TEXT_CONTENT", "PARAM_CLOSE", "PARAM_ID", "PARAM_EQUALS", "PARAM_STRING",
-		"PARAM_ID_LIST_START", "PARAM_ID_LIST_SEP", "PARAM_ID_LIST_END", "PARAM_BOOL",
+		"PARAM_ID_LIST_START", "PARAM_ID_LIST_SEP", "PARAM_ID_LIST_END", "PARAM_NOT",
 		"PARAM_NUMBER", "PARAM_WS", "DEDUCT_CLOSE", "DEDUCT_COMMENT", "DEDUCT_RE_ID_REF",
 		"DEDUCT_AND", "DEDUCT_OR", "DEDUCT_NOT", "DEDUCT_TRUE", "DEDUCT_FALSE",
 		"DEDUCT_LPAREN", "DEDUCT_RPAREN", "DEDUCT_WS", "MATH_CLOSE", "MATH_ESC_SEQ",
@@ -78,8 +78,8 @@ func redslparserParserInit() {
 		1, 12, 1, 12, 1, 12, 4, 12, 151, 8, 12, 11, 12, 12, 12, 152, 1, 13, 1,
 		13, 5, 13, 157, 8, 13, 10, 13, 12, 13, 160, 9, 13, 1, 13, 1, 13, 1, 14,
 		1, 14, 1, 14, 1, 14, 1, 14, 3, 14, 169, 8, 14, 1, 15, 1, 15, 1, 15, 1,
-		15, 1, 16, 1, 16, 1, 16, 1, 16, 1, 17, 1, 17, 1, 17, 1, 17, 1, 18, 1, 18,
-		1, 18, 3, 18, 186, 8, 18, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 5,
+		15, 1, 16, 1, 16, 1, 16, 1, 16, 1, 17, 1, 17, 1, 17, 1, 17, 1, 18, 3, 18,
+		184, 8, 18, 1, 18, 1, 18, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 1, 19, 5,
 		19, 194, 8, 19, 10, 19, 12, 19, 197, 9, 19, 1, 19, 1, 19, 1, 20, 1, 20,
 		5, 20, 203, 8, 20, 10, 20, 12, 20, 206, 9, 20, 1, 20, 1, 20, 1, 21, 1,
 		21, 1, 21, 1, 21, 1, 21, 1, 21, 1, 21, 3, 21, 217, 8, 21, 5, 21, 219, 8,
@@ -92,7 +92,7 @@ func redslparserParserInit() {
 		1, 0, 0, 0, 10, 116, 1, 0, 0, 0, 12, 118, 1, 0, 0, 0, 14, 126, 1, 0, 0,
 		0, 16, 128, 1, 0, 0, 0, 18, 132, 1, 0, 0, 0, 20, 135, 1, 0, 0, 0, 22, 138,
 		1, 0, 0, 0, 24, 150, 1, 0, 0, 0, 26, 154, 1, 0, 0, 0, 28, 168, 1, 0, 0,
-		0, 30, 170, 1, 0, 0, 0, 32, 174, 1, 0, 0, 0, 34, 178, 1, 0, 0, 0, 36, 182,
+		0, 30, 170, 1, 0, 0, 0, 32, 174, 1, 0, 0, 0, 34, 178, 1, 0, 0, 0, 36, 183,
 		1, 0, 0, 0, 38, 187, 1, 0, 0, 0, 40, 200, 1, 0, 0, 0, 42, 209, 1, 0, 0,
 		0, 44, 225, 1, 0, 0, 0, 46, 237, 1, 0, 0, 0, 48, 50, 3, 2, 1, 0, 49, 48,
 		1, 0, 0, 0, 50, 51, 1, 0, 0, 0, 51, 49, 1, 0, 0, 0, 51, 52, 1, 0, 0, 0,
@@ -144,9 +144,9 @@ func redslparserParserInit() {
 		0, 170, 171, 5, 32, 0, 0, 171, 172, 5, 33, 0, 0, 172, 173, 5, 34, 0, 0,
 		173, 31, 1, 0, 0, 0, 174, 175, 5, 32, 0, 0, 175, 176, 5, 33, 0, 0, 176,
 		177, 5, 32, 0, 0, 177, 33, 1, 0, 0, 0, 178, 179, 5, 32, 0, 0, 179, 180,
-		5, 33, 0, 0, 180, 181, 5, 39, 0, 0, 181, 35, 1, 0, 0, 0, 182, 185, 5, 32,
-		0, 0, 183, 184, 5, 33, 0, 0, 184, 186, 5, 38, 0, 0, 185, 183, 1, 0, 0,
-		0, 185, 186, 1, 0, 0, 0, 186, 37, 1, 0, 0, 0, 187, 188, 5, 32, 0, 0, 188,
+		5, 33, 0, 0, 180, 181, 5, 39, 0, 0, 181, 35, 1, 0, 0, 0, 182, 184, 5, 38,
+		0, 0, 183, 182, 1, 0, 0, 0, 183, 184, 1, 0, 0, 0, 184, 185, 1, 0, 0, 0,
+		185, 186, 5, 32, 0, 0, 186, 37, 1, 0, 0, 0, 187, 188, 5, 32, 0, 0, 188,
 		189, 5, 33, 0, 0, 189, 190, 5, 35, 0, 0, 190, 195, 5, 32, 0, 0, 191, 192,
 		5, 36, 0, 0, 192, 194, 5, 32, 0, 0, 193, 191, 1, 0, 0, 0, 194, 197, 1,
 		0, 0, 0, 195, 193, 1, 0, 0, 0, 195, 196, 1, 0, 0, 0, 196, 198, 1, 0, 0,
@@ -166,7 +166,7 @@ func redslparserParserInit() {
 		231, 1, 0, 0, 0, 234, 236, 5, 3, 0, 0, 235, 227, 1, 0, 0, 0, 235, 236,
 		1, 0, 0, 0, 236, 45, 1, 0, 0, 0, 237, 238, 5, 1, 0, 0, 238, 239, 5, 5,
 		0, 0, 239, 47, 1, 0, 0, 0, 27, 51, 55, 57, 59, 63, 72, 74, 84, 88, 96,
-		98, 101, 104, 116, 126, 150, 152, 158, 168, 185, 195, 204, 216, 218, 220,
+		98, 101, 104, 116, 126, 150, 152, 158, 168, 183, 195, 204, 216, 218, 220,
 		231, 235,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
@@ -243,7 +243,7 @@ const (
 	ReDSLParserPARAM_ID_LIST_START  = 35
 	ReDSLParserPARAM_ID_LIST_SEP    = 36
 	ReDSLParserPARAM_ID_LIST_END    = 37
-	ReDSLParserPARAM_BOOL           = 38
+	ReDSLParserPARAM_NOT            = 38
 	ReDSLParserPARAM_NUMBER         = 39
 	ReDSLParserPARAM_WS             = 40
 	ReDSLParserDEDUCT_CLOSE         = 41
@@ -3055,7 +3055,7 @@ func (p *ReDSLParser) ParameterBlock() (localctx IParameterBlockContext) {
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	for _la == ReDSLParserPARAM_ID {
+	for _la == ReDSLParserPARAM_ID || _la == ReDSLParserPARAM_NOT {
 		{
 			p.SetState(155)
 			p.ParamDecl()
@@ -3673,8 +3673,7 @@ type IBoolParamDeclContext interface {
 
 	// Getter signatures
 	PARAM_ID() antlr.TerminalNode
-	PARAM_EQUALS() antlr.TerminalNode
-	PARAM_BOOL() antlr.TerminalNode
+	PARAM_NOT() antlr.TerminalNode
 
 	// IsBoolParamDeclContext differentiates from other interfaces.
 	IsBoolParamDeclContext()
@@ -3716,12 +3715,8 @@ func (s *BoolParamDeclContext) PARAM_ID() antlr.TerminalNode {
 	return s.GetToken(ReDSLParserPARAM_ID, 0)
 }
 
-func (s *BoolParamDeclContext) PARAM_EQUALS() antlr.TerminalNode {
-	return s.GetToken(ReDSLParserPARAM_EQUALS, 0)
-}
-
-func (s *BoolParamDeclContext) PARAM_BOOL() antlr.TerminalNode {
-	return s.GetToken(ReDSLParserPARAM_BOOL, 0)
+func (s *BoolParamDeclContext) PARAM_NOT() antlr.TerminalNode {
+	return s.GetToken(ReDSLParserPARAM_NOT, 0)
 }
 
 func (s *BoolParamDeclContext) GetRuleContext() antlr.RuleContext {
@@ -3750,39 +3745,31 @@ func (p *ReDSLParser) BoolParamDecl() (localctx IBoolParamDeclContext) {
 	var _la int
 
 	p.EnterOuterAlt(localctx, 1)
-	{
-		p.SetState(182)
-		p.Match(ReDSLParserPARAM_ID)
-		if p.HasError() {
-			// Recognition error - abort rule
-			goto errorExit
-		}
-	}
-	p.SetState(185)
+	p.SetState(183)
 	p.GetErrorHandler().Sync(p)
 	if p.HasError() {
 		goto errorExit
 	}
 	_la = p.GetTokenStream().LA(1)
 
-	if _la == ReDSLParserPARAM_EQUALS {
+	if _la == ReDSLParserPARAM_NOT {
 		{
-			p.SetState(183)
-			p.Match(ReDSLParserPARAM_EQUALS)
-			if p.HasError() {
-				// Recognition error - abort rule
-				goto errorExit
-			}
-		}
-		{
-			p.SetState(184)
-			p.Match(ReDSLParserPARAM_BOOL)
+			p.SetState(182)
+			p.Match(ReDSLParserPARAM_NOT)
 			if p.HasError() {
 				// Recognition error - abort rule
 				goto errorExit
 			}
 		}
 
+	}
+	{
+		p.SetState(185)
+		p.Match(ReDSLParserPARAM_ID)
+		if p.HasError() {
+			// Recognition error - abort rule
+			goto errorExit
+		}
 	}
 
 errorExit:

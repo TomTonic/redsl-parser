@@ -66,7 +66,8 @@ PARAM_ID_LIST_START: '{';
 PARAM_ID_LIST_SEP: ',';
 PARAM_ID_LIST_END: '}';
 //PARAM_RE_ID_REF     : ReID ;
-PARAM_BOOL: 'true' | 'false';
+//PARAM_BOOL: 'true' | 'false';
+PARAM_NOT: '!' | '\u00AC';
 PARAM_NUMBER: [+-]? Digits
     |   [+-]? Digits '.' Digits Exponent?
     |   [+-]? '.' Digits Exponent?
