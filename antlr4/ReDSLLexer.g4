@@ -61,7 +61,7 @@ mode PARAM_MODE;
 PARAM_CLOSE: ']' -> popMode;
 PARAM_ID: UnicodeLetter (UnicodeLetter | UnicodeNumber)*;
 PARAM_EQUALS: '=';
-PARAM_STRING: '"' .*? '"';
+PARAM_STRING: '"' ( EscapedQuote | ~["\\] )* '"';
 PARAM_ID_LIST_START: '{';
 PARAM_ID_LIST_SEP: ',';
 PARAM_ID_LIST_END: '}';

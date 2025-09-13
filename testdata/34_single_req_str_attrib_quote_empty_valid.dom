@@ -1,0 +1,14 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §444
+    Rule: parameterBlock
+      Terminal: [
+      Rule: paramDecl
+        Rule: stringParamDecl
+          Terminal: x3e
+          Terminal: =
+          Terminal: "ab\"c"
+      Terminal: ]
+    Terminal: {
+    Terminal: }
+  Terminal: <EOF>
