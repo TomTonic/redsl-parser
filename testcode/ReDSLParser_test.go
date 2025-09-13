@@ -83,7 +83,7 @@ func TestParseReDSLFilesAndCompareDOM(t *testing.T) {
 						return
 					}
 					if domStr != string(expectedDOM) {
-						t.Errorf("DOM string does not match expected for %s:\n%s", name, domStr)
+						t.Errorf("DOM string does not match expected for %s:\nexpected: %q\ngot:      %q", name, expectedDOM, domStr)
 						t.Fail()
 						return
 					}
