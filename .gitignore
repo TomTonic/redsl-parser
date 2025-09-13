@@ -6,6 +6,6 @@ java/*.*
 *.interp
 *.tokens
 
-# Log file
 *.log
 .DS_Store
+.vscode
