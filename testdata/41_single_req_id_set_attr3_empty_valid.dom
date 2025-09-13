@@ -1,0 +1,20 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §a.b
+    Rule: parameterBlock
+      Terminal: [
+      Rule: paramDecl
+        Rule: idListParamDecl
+          Terminal: a
+          Terminal: =
+          Terminal: {
+          Terminal: b
+          Terminal: ,
+          Terminal: c
+          Terminal: ,
+          Terminal: d
+          Terminal: }
+      Terminal: ]
+    Terminal: {
+    Terminal: }
+  Terminal: <EOF>
