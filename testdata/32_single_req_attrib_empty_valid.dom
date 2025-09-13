@@ -1,0 +1,9 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §aAa
+    Rule: parameterBlock
+      Terminal: [
+      Terminal: ]
+    Terminal: {
+    Terminal: }
+  Terminal: <EOF>
