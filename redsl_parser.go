@@ -35,7 +35,7 @@ func redslparserParserInit() {
 		"", "'file'", "", "", "'package'", "", "", "", "'document'", "'version-info'",
 		"'glossary'", "'local'", "'global'", "'['", "", "", "", "", "", "",
 		"", "", "", "", "", "", "", "", "", "", "", "']'", "", "'='", "", "",
-		"','", "", "", "", "", "';'", "", "", "", "", "", "", "", "'('", "')'",
+		"','", "", "", "", "", "", "", "", "", "", "", "", "", "", "'('", "')'",
 	}
 	staticData.SymbolicNames = []string{
 		"", "FILE_KEYWORD", "BLOCK_START", "BLOCK_END", "PACKAGE_KEYWORD", "ID_STR",
@@ -46,10 +46,10 @@ func redslparserParserInit() {
 		"TEXT_RE_ID_REF", "TEXT_URI", "TEXT_TERM_REF", "TEXT_START_MATH", "TEXT_ESC_SEQ",
 		"TEXT_CONTENT", "PARAM_CLOSE", "PARAM_ID", "PARAM_EQUALS", "PARAM_STRING",
 		"PARAM_ID_LIST_START", "PARAM_ID_LIST_SEP", "PARAM_ID_LIST_END", "PARAM_NOT",
-		"PARAM_NUMBER", "PARAM_WS", "DEDUCT_CLOSE", "DEDUCT_COMMENT", "DEDUCT_RE_ID_REF",
-		"DEDUCT_AND", "DEDUCT_OR", "DEDUCT_NOT", "DEDUCT_TRUE", "DEDUCT_FALSE",
-		"DEDUCT_LPAREN", "DEDUCT_RPAREN", "DEDUCT_WS", "MATH_CLOSE", "MATH_ESC_SEQ",
-		"MATH_CONTENT",
+		"PARAM_NUMBER", "PARAM_SEP", "PARAM_WS", "DEDUCT_CLOSE", "DEDUCT_COMMENT",
+		"DEDUCT_RE_ID_REF", "DEDUCT_AND", "DEDUCT_OR", "DEDUCT_NOT", "DEDUCT_TRUE",
+		"DEDUCT_FALSE", "DEDUCT_LPAREN", "DEDUCT_RPAREN", "DEDUCT_WS", "MATH_CLOSE",
+		"MATH_ESC_SEQ", "MATH_CONTENT",
 	}
 	staticData.RuleNames = []string{
 		"parse", "fileDecl", "packageDecl", "requirementDecl", "requirementDeduction",
@@ -61,7 +61,7 @@ func redslparserParserInit() {
 	}
 	staticData.PredictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
-		4, 1, 54, 241, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
+		4, 1, 55, 241, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
 		4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 2, 8, 7, 8, 2, 9, 7, 9, 2, 10, 7,
 		10, 2, 11, 7, 11, 2, 12, 7, 12, 2, 13, 7, 13, 2, 14, 7, 14, 2, 15, 7, 15,
 		2, 16, 7, 16, 2, 17, 7, 17, 2, 18, 7, 18, 2, 19, 7, 19, 2, 20, 7, 20, 2,
@@ -86,8 +86,8 @@ func redslparserParserInit() {
 		21, 10, 21, 12, 21, 222, 9, 21, 1, 21, 1, 21, 1, 22, 1, 22, 1, 22, 1, 22,
 		5, 22, 230, 8, 22, 10, 22, 12, 22, 233, 9, 22, 1, 22, 3, 22, 236, 8, 22,
 		1, 23, 1, 23, 1, 23, 1, 23, 0, 0, 24, 0, 2, 4, 6, 8, 10, 12, 14, 16, 18,
-		20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 0, 4, 2, 0, 43,
-		43, 47, 48, 1, 0, 44, 45, 1, 0, 53, 54, 1, 0, 11, 12, 259, 0, 63, 1, 0,
+		20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 0, 4, 2, 0, 44,
+		44, 48, 49, 1, 0, 45, 46, 1, 0, 54, 55, 1, 0, 11, 12, 259, 0, 63, 1, 0,
 		0, 0, 2, 65, 1, 0, 0, 0, 4, 79, 1, 0, 0, 0, 6, 82, 1, 0, 0, 0, 8, 108,
 		1, 0, 0, 0, 10, 116, 1, 0, 0, 0, 12, 118, 1, 0, 0, 0, 14, 126, 1, 0, 0,
 		0, 16, 128, 1, 0, 0, 0, 18, 132, 1, 0, 0, 0, 20, 135, 1, 0, 0, 0, 22, 138,
@@ -117,13 +117,13 @@ func redslparserParserInit() {
 		0, 101, 102, 1, 0, 0, 0, 102, 104, 1, 0, 0, 0, 103, 105, 5, 21, 0, 0, 104,
 		103, 1, 0, 0, 0, 104, 105, 1, 0, 0, 0, 105, 106, 1, 0, 0, 0, 106, 107,
 		5, 17, 0, 0, 107, 7, 1, 0, 0, 0, 108, 109, 5, 7, 0, 0, 109, 110, 5, 15,
-		0, 0, 110, 111, 3, 10, 5, 0, 111, 112, 5, 41, 0, 0, 112, 9, 1, 0, 0, 0,
+		0, 0, 110, 111, 3, 10, 5, 0, 111, 112, 5, 42, 0, 0, 112, 9, 1, 0, 0, 0,
 		113, 117, 3, 12, 6, 0, 114, 117, 3, 14, 7, 0, 115, 117, 3, 16, 8, 0, 116,
 		113, 1, 0, 0, 0, 116, 114, 1, 0, 0, 0, 116, 115, 1, 0, 0, 0, 117, 11, 1,
-		0, 0, 0, 118, 119, 7, 0, 0, 0, 119, 13, 1, 0, 0, 0, 120, 121, 5, 46, 0,
-		0, 121, 127, 3, 10, 5, 0, 122, 123, 5, 49, 0, 0, 123, 124, 3, 10, 5, 0,
-		124, 125, 5, 50, 0, 0, 125, 127, 1, 0, 0, 0, 126, 120, 1, 0, 0, 0, 126,
-		122, 1, 0, 0, 0, 127, 15, 1, 0, 0, 0, 128, 129, 5, 43, 0, 0, 129, 130,
+		0, 0, 0, 118, 119, 7, 0, 0, 0, 119, 13, 1, 0, 0, 0, 120, 121, 5, 47, 0,
+		0, 121, 127, 3, 10, 5, 0, 122, 123, 5, 50, 0, 0, 123, 124, 3, 10, 5, 0,
+		124, 125, 5, 51, 0, 0, 125, 127, 1, 0, 0, 0, 126, 120, 1, 0, 0, 0, 126,
+		122, 1, 0, 0, 0, 127, 15, 1, 0, 0, 0, 128, 129, 5, 44, 0, 0, 129, 130,
 		7, 1, 0, 0, 130, 131, 3, 10, 5, 0, 131, 17, 1, 0, 0, 0, 132, 133, 5, 22,
 		0, 0, 133, 134, 3, 24, 12, 0, 134, 19, 1, 0, 0, 0, 135, 136, 5, 23, 0,
 		0, 136, 137, 3, 24, 12, 0, 137, 21, 1, 0, 0, 0, 138, 139, 5, 24, 0, 0,
@@ -153,7 +153,7 @@ func redslparserParserInit() {
 		0, 197, 195, 1, 0, 0, 0, 198, 199, 5, 37, 0, 0, 199, 39, 1, 0, 0, 0, 200,
 		204, 5, 28, 0, 0, 201, 203, 7, 2, 0, 0, 202, 201, 1, 0, 0, 0, 203, 206,
 		1, 0, 0, 0, 204, 202, 1, 0, 0, 0, 204, 205, 1, 0, 0, 0, 205, 207, 1, 0,
-		0, 0, 206, 204, 1, 0, 0, 0, 207, 208, 5, 52, 0, 0, 208, 41, 1, 0, 0, 0,
+		0, 0, 206, 204, 1, 0, 0, 0, 207, 208, 5, 53, 0, 0, 208, 41, 1, 0, 0, 0,
 		209, 210, 5, 8, 0, 0, 210, 211, 5, 5, 0, 0, 211, 220, 5, 2, 0, 0, 212,
 		219, 3, 44, 22, 0, 213, 219, 5, 9, 0, 0, 214, 216, 5, 10, 0, 0, 215, 217,
 		7, 3, 0, 0, 216, 215, 1, 0, 0, 0, 216, 217, 1, 0, 0, 0, 217, 219, 1, 0,
@@ -245,21 +245,22 @@ const (
 	ReDSLParserPARAM_ID_LIST_END    = 37
 	ReDSLParserPARAM_NOT            = 38
 	ReDSLParserPARAM_NUMBER         = 39
-	ReDSLParserPARAM_WS             = 40
-	ReDSLParserDEDUCT_CLOSE         = 41
-	ReDSLParserDEDUCT_COMMENT       = 42
-	ReDSLParserDEDUCT_RE_ID_REF     = 43
-	ReDSLParserDEDUCT_AND           = 44
-	ReDSLParserDEDUCT_OR            = 45
-	ReDSLParserDEDUCT_NOT           = 46
-	ReDSLParserDEDUCT_TRUE          = 47
-	ReDSLParserDEDUCT_FALSE         = 48
-	ReDSLParserDEDUCT_LPAREN        = 49
-	ReDSLParserDEDUCT_RPAREN        = 50
-	ReDSLParserDEDUCT_WS            = 51
-	ReDSLParserMATH_CLOSE           = 52
-	ReDSLParserMATH_ESC_SEQ         = 53
-	ReDSLParserMATH_CONTENT         = 54
+	ReDSLParserPARAM_SEP            = 40
+	ReDSLParserPARAM_WS             = 41
+	ReDSLParserDEDUCT_CLOSE         = 42
+	ReDSLParserDEDUCT_COMMENT       = 43
+	ReDSLParserDEDUCT_RE_ID_REF     = 44
+	ReDSLParserDEDUCT_AND           = 45
+	ReDSLParserDEDUCT_OR            = 46
+	ReDSLParserDEDUCT_NOT           = 47
+	ReDSLParserDEDUCT_TRUE          = 48
+	ReDSLParserDEDUCT_FALSE         = 49
+	ReDSLParserDEDUCT_LPAREN        = 50
+	ReDSLParserDEDUCT_RPAREN        = 51
+	ReDSLParserDEDUCT_WS            = 52
+	ReDSLParserMATH_CLOSE           = 53
+	ReDSLParserMATH_ESC_SEQ         = 54
+	ReDSLParserMATH_CONTENT         = 55
 )
 
 // ReDSLParser rules.
@@ -1920,7 +1921,7 @@ func (p *ReDSLParser) LogicalAtom() (localctx ILogicalAtomContext) {
 		p.SetState(118)
 		_la = p.GetTokenStream().LA(1)
 
-		if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&431008558088192) != 0) {
+		if !((int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&862017116176384) != 0) {
 			p.GetErrorHandler().RecoverInline(p)
 		} else {
 			p.GetErrorHandler().ReportMatch(p)
