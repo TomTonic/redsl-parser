@@ -73,7 +73,7 @@ PARAM_NUMBER: [+-]? Digits
     |   [+-]? '.' Digits Exponent?
     |   [+-]? Digits Exponent
     ;
-//PARAM_SEP           : ';' ;
+PARAM_SEP: ';' -> skip;
 PARAM_WS: [ \t\r\n] -> skip;
 
 mode DEDUCT_MODE;
