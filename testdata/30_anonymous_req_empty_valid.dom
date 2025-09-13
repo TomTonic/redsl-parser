@@ -1,0 +1,6 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §_
+    Terminal: {
+    Terminal: }
+  Terminal: <EOF>
