@@ -52,3 +52,5 @@ fragment NextPara: Linebreak (Hws* Linebreak)+ Hws*;
 
 fragment IdStr: '"' ((~["\\\r\n\f]) | (IdStrEsc))* '"';
 fragment IdStrEsc: ('\\\\' | '\\"' | ('\\' .)) | UnicodeCP;
+
+fragment EscapedQuote: '\\"';
