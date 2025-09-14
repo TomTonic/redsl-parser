@@ -1,5 +1,6 @@
-// Copyright 2019 by Tom Gelhausen. License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007. See
-// https://opensource.org/licenses/GPL-3.0
+// Copyright 2019-2025 by Tom Gelhausen. License: GNU Lesser General Public License v3.0, 29 June 2007. See
+// https://opensource.org/license/LGPL-3.0
+
 parser grammar ReDSLParser;
 
 options {
