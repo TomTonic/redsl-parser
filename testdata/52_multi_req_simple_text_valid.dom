@@ -1,0 +1,22 @@
+Rule: parse
+  Rule: requirementDecl
+    Terminal: §id
+    Terminal: {
+    Rule: runningText
+      Terminal:  
+      Terminal: Hello
+      Terminal:  
+      Terminal: World.
+      Terminal:  
+    Terminal: }
+  Rule: requirementDecl
+    Terminal: §id
+    Terminal: {
+    Rule: runningText
+      Terminal:  
+      Terminal: Hello
+      Terminal:  
+      Terminal: World.
+      Terminal:  
+    Terminal: }
+  Terminal: <EOF>
